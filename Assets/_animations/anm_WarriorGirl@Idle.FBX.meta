@@ -1,0 +1,1457 @@
+fileFormatVersion: 2
+guid: 81b8569c46531f248927071230b14160
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Bone041
+    100002: Bone033
+    100004: Bone032
+    100006: Bip001 Prop1
+    100008: Bone043
+    100010: Bone048
+    100012: Bone047
+    100014: Bone034
+    100016: //RootNode
+    100018: Bip001 R Toe0
+    100020: Bip001 R Foot
+    100022: Bip001 R Calf
+    100024: Bone042
+    100026: sword
+    100028: Bone038
+    100030: Bone037
+    100032: Bip001 L Thigh
+    100034: Bone054
+    100036: Bone055
+    100038: Bone050
+    100040: Bone049
+    100042: Bone039
+    100044: Bip001 R Hand
+    100046: Bone046
+    100048: Bone045
+    100050: Bone044
+    100052: Bip001 R Thigh
+    100054: Bip001 L Toe0
+    100056: Bip001 L Foot
+    100058: Bip001 L Calf
+    100060: Bone035
+    100062: Bone036
+    100064: Bone040
+    100066: Bip001 L Hand
+    100068: Bip001 Neck
+    100070: Bip001 Spine2
+    100072: Bip001 Spine1
+    100074: Bip001 Spine
+    100076: Bip001 Pelvis
+    100078: Bip001
+    100080: Dress_C Dress01
+    100082: Body_body
+    100084: Bone035(mirrored)
+    100086: Bone034(mirrored)
+    100088: Bone033(mirrored)
+    100090: Bone032(mirrored)
+    100092: Bip001 R Toe0Nub
+    100094: Bip001 L Toe0Nub
+    100096: Bone053(mirrored)
+    100098: Bone052(mirrored)
+    100100: Bone051(mirrored)
+    100102: Bone031(mirrored)
+    100104: Bone029(mirrored)
+    100106: Bone030(mirrored)
+    100108: Bone046(mirrored)
+    100110: Bone045(mirrored)
+    100112: Bone044(mirrored)
+    100114: Bip001 R Finger4Nub
+    100116: Bip001 R Finger41
+    100118: Bip001 R Finger4
+    100120: Bip001 R Finger3Nub
+    100122: Bip001 R Finger31
+    100124: Bip001 R Finger3
+    100126: Bip001 R Finger2Nub
+    100128: Bip001 R Finger21
+    100130: Bip001 R Finger2
+    100132: Bip001 R Finger1Nub
+    100134: Bip001 R Finger11
+    100136: Bip001 R Finger1
+    100138: Bip001 R Finger0Nub
+    100140: Bip001 R Finger01
+    100142: Bip001 R Finger0
+    100144: Bip001 R Forearm
+    100146: Bip001 R UpperArm
+    100148: Bip001 R Clavicle
+    100150: Bip001 L Finger4Nub
+    100152: Bip001 L Finger41
+    100154: Bip001 L Finger4
+    100156: Bip001 L Finger3Nub
+    100158: Bip001 L Finger31
+    100160: Bip001 L Finger3
+    100162: Bip001 L Finger2Nub
+    100164: Bip001 L Finger21
+    100166: Bip001 L Finger2
+    100168: Bip001 L Finger1Nub
+    100170: Bip001 L Finger11
+    100172: Bip001 L Finger1
+    100174: Bip001 L Finger0Nub
+    100176: Bip001 L Finger01
+    100178: Bip001 L Finger0
+    100180: Bip001 L Forearm
+    100182: Bip001 L UpperArm
+    100184: Bip001 L Clavicle
+    100186: Bip001 Footsteps
+    100188: Bone031
+    100190: Bone029
+    100192: Bone030
+    100194: Bip001 HeadNub
+    100196: Bip001 Head
+    100198: Bone053
+    100200: Bone052
+    100202: Bone051
+    400000: Bone041
+    400002: Bone033
+    400004: Bone032
+    400006: Bip001 Prop1
+    400008: Bone043
+    400010: Bone048
+    400012: Bone047
+    400014: Bone034
+    400016: //RootNode
+    400018: Bip001 R Toe0
+    400020: Bip001 R Foot
+    400022: Bip001 R Calf
+    400024: Bone042
+    400026: sword
+    400028: Bone038
+    400030: Bone037
+    400032: Bip001 L Thigh
+    400034: Bone054
+    400036: Bone055
+    400038: Bone050
+    400040: Bone049
+    400042: Bone039
+    400044: Bip001 R Hand
+    400046: Bone046
+    400048: Bone045
+    400050: Bone044
+    400052: Bip001 R Thigh
+    400054: Bip001 L Toe0
+    400056: Bip001 L Foot
+    400058: Bip001 L Calf
+    400060: Bone035
+    400062: Bone036
+    400064: Bone040
+    400066: Bip001 L Hand
+    400068: Bip001 Neck
+    400070: Bip001 Spine2
+    400072: Bip001 Spine1
+    400074: Bip001 Spine
+    400076: Bip001 Pelvis
+    400078: Bip001
+    400080: Dress_C Dress01
+    400082: Body_body
+    400084: Bone035(mirrored)
+    400086: Bone034(mirrored)
+    400088: Bone033(mirrored)
+    400090: Bone032(mirrored)
+    400092: Bip001 R Toe0Nub
+    400094: Bip001 L Toe0Nub
+    400096: Bone053(mirrored)
+    400098: Bone052(mirrored)
+    400100: Bone051(mirrored)
+    400102: Bone031(mirrored)
+    400104: Bone029(mirrored)
+    400106: Bone030(mirrored)
+    400108: Bone046(mirrored)
+    400110: Bone045(mirrored)
+    400112: Bone044(mirrored)
+    400114: Bip001 R Finger4Nub
+    400116: Bip001 R Finger41
+    400118: Bip001 R Finger4
+    400120: Bip001 R Finger3Nub
+    400122: Bip001 R Finger31
+    400124: Bip001 R Finger3
+    400126: Bip001 R Finger2Nub
+    400128: Bip001 R Finger21
+    400130: Bip001 R Finger2
+    400132: Bip001 R Finger1Nub
+    400134: Bip001 R Finger11
+    400136: Bip001 R Finger1
+    400138: Bip001 R Finger0Nub
+    400140: Bip001 R Finger01
+    400142: Bip001 R Finger0
+    400144: Bip001 R Forearm
+    400146: Bip001 R UpperArm
+    400148: Bip001 R Clavicle
+    400150: Bip001 L Finger4Nub
+    400152: Bip001 L Finger41
+    400154: Bip001 L Finger4
+    400156: Bip001 L Finger3Nub
+    400158: Bip001 L Finger31
+    400160: Bip001 L Finger3
+    400162: Bip001 L Finger2Nub
+    400164: Bip001 L Finger21
+    400166: Bip001 L Finger2
+    400168: Bip001 L Finger1Nub
+    400170: Bip001 L Finger11
+    400172: Bip001 L Finger1
+    400174: Bip001 L Finger0Nub
+    400176: Bip001 L Finger01
+    400178: Bip001 L Finger0
+    400180: Bip001 L Forearm
+    400182: Bip001 L UpperArm
+    400184: Bip001 L Clavicle
+    400186: Bip001 Footsteps
+    400188: Bone031
+    400190: Bone029
+    400192: Bone030
+    400194: Bip001 HeadNub
+    400196: Bip001 Head
+    400198: Bone053
+    400200: Bone052
+    400202: Bone051
+    4300000: Body_body
+    4300002: Dress_C Dress01
+    4300004: sword
+    7400000: ani_WarriorGirlIdle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: sword
+    13700002: Dress_C Dress01
+    13700004: Body_body
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ani_WarriorGirlIdle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 240
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: .0649999976
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Bip001
+        weight: 1
+      - path: Bip001/Bip001 Footsteps
+        weight: 1
+      - path: Bip001/Bip001 Pelvis
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001
+          L Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001
+          L Foot/Bip001 L Toe0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 L Thigh/Bip001 L Calf/Bip001
+          L Foot/Bip001 L Toe0/Bip001 L Toe0Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001
+          R Foot
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001
+          R Foot/Bip001 R Toe0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 R Thigh/Bip001 R Calf/Bip001
+          R Foot/Bip001 R Toe0/Bip001 R Toe0Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bip001 HeadNub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone029
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone029(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone030
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone030(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone031
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone031(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone047
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone047/Bone048
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone047/Bone048/Bone049
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone047/Bone048/Bone049/Bone050
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone051
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone051/Bone052
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone051/Bone052/Bone053
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone051(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone051(mirrored)/Bone052(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone051(mirrored)/Bone052(mirrored)/Bone053(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone054
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 Head/Bone055
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger0/Bip001 L Finger01
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger0/Bip001 L Finger01/Bip001 L Finger0Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger1/Bip001 L Finger11
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger1/Bip001 L Finger11/Bip001 L Finger1Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger2/Bip001 L Finger21
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger2/Bip001 L Finger21/Bip001 L Finger2Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger3
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger3/Bip001 L Finger31
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger3/Bip001 L Finger31/Bip001 L Finger3Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger4
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger4/Bip001 L Finger41
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bip001 L Hand/Bip001
+          L Finger4/Bip001 L Finger41/Bip001 L Finger4Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bone044
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bone044/Bone045
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 L Clavicle/Bip001 L UpperArm/Bip001 L Forearm/Bone044/Bone045/Bone046
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger0
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger0/Bip001 R Finger01
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger0/Bip001 R Finger01/Bip001 R Finger0Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger1
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger1/Bip001 R Finger11
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger1/Bip001 R Finger11/Bip001 R Finger1Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger2
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger2/Bip001 R Finger21
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger2/Bip001 R Finger21/Bip001 R Finger2Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger3
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger3/Bip001 R Finger31
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger3/Bip001 R Finger31/Bip001 R Finger3Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger4
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger4/Bip001 R Finger41
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bip001 R Hand/Bip001
+          R Finger4/Bip001 R Finger41/Bip001 R Finger4Nub
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bone044(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bone044(mirrored)/Bone045(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bip001 Spine/Bip001 Spine1/Bip001 Spine2/Bip001
+          Neck/Bip001 R Clavicle/Bip001 R UpperArm/Bip001 R Forearm/Bone044(mirrored)/Bone045(mirrored)/Bone046(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032/Bone033
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032/Bone033/Bone034
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032/Bone033/Bone034/Bone035
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032(mirrored)/Bone033(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032(mirrored)/Bone033(mirrored)/Bone034(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone032(mirrored)/Bone033(mirrored)/Bone034(mirrored)/Bone035(mirrored)
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone036
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone036/Bone037
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone036/Bone037/Bone038
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone036/Bone037/Bone038/Bone039
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone040
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone040/Bone041
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone040/Bone041/Bone042
+        weight: 1
+      - path: Bip001/Bip001 Pelvis/Bone040/Bone041/Bone042/Bone043
+        weight: 1
+      - path: Bip001/Bip001 Prop1
+        weight: 1
+      - path: Body_body
+        weight: 1
+      - path: Dress_C Dress01
+        weight: 1
+      - path: sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Bip001
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone030
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone030(mirrored)
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bone055
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger31
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger4
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 L Finger41
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger31
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger4
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Bip001 R Finger41
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: anm_WarriorGirl@Idle(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Body_body
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Dress_C Dress01
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: sword
+      position: {x: -.799013793, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bip001
+      position: {x: 1.11758709e-08, y: 1.13986361, z: 7.03961611e-11}
+      rotation: {x: -.50000006, y: .5, z: .5, w: .5}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Bip001 Footsteps
+      position: {x: -0, y: 0, z: -1.10797179}
+      rotation: {x: 0, y: 0, z: -.67558974, w: .737277746}
+      scale: {x: .99999994, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Bip001 Prop1
+      position: {x: .082532756, y: -.190845683, z: .621859968}
+      rotation: {x: .999048173, y: .0436201058, z: -3.10739345e-08, w: -2.84739752e-08}
+      scale: {x: .999999881, y: .999999762, z: .99999994}
+      transformModified: 1
+    - name: Bip001 Pelvis
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: .526555479, y: -.471951872, z: -.471951276, w: -.526557505}
+      scale: {x: .999999702, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Bone036
+      position: {x: .0182427969, y: .094510518, z: -3.82661824e-07}
+      rotation: {x: -.0889428109, y: .996036708, z: -3.0567362e-06, w: -6.21131051e-07}
+      scale: {x: 1.00000072, y: 1.00000036, z: 1.0000006}
+      transformModified: 1
+    - name: Bone037
+      position: {x: -.245724946, y: 1.33514405e-07, z: -2.503395e-08}
+      rotation: {x: -1.62787319e-06, y: 8.30577704e-08, z: .00285352813, w: .999996006}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Bone038
+      position: {x: -.199343637, y: -3.81469718e-08, z: 2.38418574e-09}
+      rotation: {x: -2.54915591e-08, y: -9.16699463e-08, z: -.0119202621, w: .999929011}
+      scale: {x: .999999464, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Bone039
+      position: {x: -.245501325, y: 0, z: 4.76837148e-09}
+      rotation: {x: 2.0325599e-09, y: 6.77076242e-11, z: 3.7252903e-09, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bone040
+      position: {x: .0549179055, y: -.0859992653, z: 7.62939436e-08}
+      rotation: {x: .0068835658, y: .999976397, z: -1.43696843e-06, w: -5.38939503e-07}
+      scale: {x: 1, y: 1.00000036, z: 1.00000012}
+      transformModified: 1
+    - name: Bone041
+      position: {x: -.219688252, y: -3.81469718e-08, z: 3.57627861e-09}
+      rotation: {x: -2.63361759e-08, y: 3.29382956e-08, z: .0247096531, w: .999694705}
+      scale: {x: 1.00000024, y: 1.00000024, z: .999999881}
+      transformModified: 1
+    - name: Bone042
+      position: {x: -.205295026, y: -5.72204577e-08, z: 4.76837148e-09}
+      rotation: {x: 5.50365158e-08, y: -6.38710844e-08, z: .0241373945, w: .999708652}
+      scale: {x: .999999881, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Bone043
+      position: {x: -.278620005, y: 1.90734859e-08, z: 4.76837148e-09}
+      rotation: {x: -2.20382312e-09, y: -6.29611988e-11, z: -1.38755347e-19, w: 1}
+      scale: {x: .99999994, y: .999999881, z: .99999994}
+      transformModified: 1
+    - name: Bone032(mirrored)
+      position: {x: -.0228484347, y: -.00250691408, z: -.180110142}
+      rotation: {x: .0311854165, y: .707642555, z: .699544728, w: -.0943757519}
+      scale: {x: .99999994, y: 1.00000048, z: 1.00000024}
+      transformModified: 1
+    - name: Bone033(mirrored)
+      position: {x: -.197193071, y: 0, z: -7.74860354e-08}
+      rotation: {x: -.0025070745, y: -.0319865085, z: -.0780912191, w: .996429861}
+      scale: {x: .999999702, y: .999999464, z: 1.00000012}
+      transformModified: 1
+    - name: Bone034(mirrored)
+      position: {x: -.293700099, y: 2.4986266e-06, z: 1.57356254e-07}
+      rotation: {x: -1.72726516e-07, y: -8.57852989e-09, z: .0451584794, w: .998979867}
+      scale: {x: 1, y: .99999994, z: 1.00000024}
+      transformModified: 1
+    - name: Bone035(mirrored)
+      position: {x: -.221443966, y: 3.81469718e-08, z: 0}
+      rotation: {x: 3.29688191e-07, y: 3.72520548e-09, z: -2.53319655e-07, w: 1}
+      scale: {x: 1.00000036, y: 1, z: 1}
+      transformModified: 1
+    - name: Bone032
+      position: {x: -.0228479765, y: -.00250593177, z: .18011184}
+      rotation: {x: -.09437491, y: .699546814, z: .707640648, w: .0311841387}
+      scale: {x: 1, y: 1.0000006, z: 1.00000012}
+      transformModified: 1
+    - name: Bone033
+      position: {x: -.197193071, y: 0, z: 7.15255721e-09}
+      rotation: {x: .00250629266, y: -.0319865234, z: .0780909806, w: .996429861}
+      scale: {x: .999999642, y: .999999583, z: 1.00000012}
+      transformModified: 1
+    - name: Bone034
+      position: {x: -.293700159, y: -2.5749207e-06, z: 1.90734859e-08}
+      rotation: {x: 2.17007951e-07, y: 1.2411502e-08, z: -.0451581851, w: .998979926}
+      scale: {x: 1.0000006, y: 1.00000036, z: 1.00000012}
+      transformModified: 1
+    - name: Bone035
+      position: {x: -.221443817, y: 3.81469718e-08, z: 1.90734859e-08}
+      rotation: {x: 3.25962857e-09, y: 1.21430627e-17, z: 3.7252903e-09, w: 1}
+      scale: {x: 1, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 Spine
+      position: {x: -.0970058441, y: .0192663483, z: 7.98702189e-08}
+      rotation: {x: 2.0818502e-06, y: -6.58269926e-07, z: -.0194153972, w: -.99981153}
+      scale: {x: 1.00000024, y: 1.00000048, z: 1.00000024}
+      transformModified: 1
+    - name: Bip001 Spine1
+      position: {x: -.105294645, y: -8.53347738e-05, z: -1.19209287e-09}
+      rotation: {x: -6.3154465e-10, y: 1.64009904e-07, z: -.0626886114, w: -.998033166}
+      scale: {x: .999999881, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Bip001 Spine2
+      position: {x: -.10801056, y: -.000137643816, z: 0}
+      rotation: {x: 1.43966528e-08, y: -6.16731057e-08, z: .0231166109, w: .999732792}
+      scale: {x: .999999881, y: .99999994, z: .999999642}
+      transformModified: 1
+    - name: Bip001 Neck
+      position: {x: -.219004974, y: -.0393570885, z: -4.7683713e-08}
+      rotation: {x: -2.72782206e-08, y: -4.27396515e-07, z: .142065212, w: -.989857316}
+      scale: {x: 1.00000048, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 Head
+      position: {x: -.065373227, y: -.00450553885, z: -5.96046412e-09}
+      rotation: {x: -4.11823642e-08, y: -9.07225584e-09, z: -.0140440827, w: .999901354}
+      scale: {x: 1.00000024, y: 1.00000036, z: 1.00000048}
+      transformModified: 1
+    - name: Bip001 HeadNub
+      position: {x: -.233948514, y: 3.81469718e-08, z: 3.57627861e-09}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Bone051
+      position: {x: -.0150740044, y: .0401007459, z: .0860002339}
+      rotation: {x: .252776533, y: -.681907952, z: -.674163759, w: .128875256}
+      scale: {x: 1.00000012, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Bone052
+      position: {x: -.134473115, y: -3.81469718e-08, z: 0}
+      rotation: {x: .00759113627, y: -.195559308, z: .0380381681, w: .9799245}
+      scale: {x: 1.00000024, y: 1.00000024, z: .999999821}
+      transformModified: 1
+    - name: Bone053
+      position: {x: -.192695916, y: 1.90734859e-08, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bone051(mirrored)
+      position: {x: -.0150740044, y: .0401009731, z: -.0859997645}
+      rotation: {x: .128875732, y: -.674162984, z: -.681908786, w: .252776206}
+      scale: {x: 1.00000012, y: .99999994, z: .999999821}
+      transformModified: 1
+    - name: Bone052(mirrored)
+      position: {x: -.134473115, y: 3.81469718e-08, z: 1.52587887e-07}
+      rotation: {x: -.00759035302, y: -.195559412, z: -.0380378924, w: .97992456}
+      scale: {x: 1, y: 1.00000024, z: .999999762}
+      transformModified: 1
+    - name: Bone053(mirrored)
+      position: {x: -.192696065, y: -1.43051144e-08, z: -1.43051139e-07}
+      rotation: {x: -4.76487941e-07, y: -1.86264426e-09, z: -1.86264604e-09, w: 1}
+      scale: {x: 1, y: .99999994, z: 1.00000024}
+      transformModified: 1
+    - name: Bone047
+      position: {x: -.0452987663, y: -.112180516, z: -1.50203704e-07}
+      rotation: {x: .105760947, y: -.99439162, z: -1.96723661e-07, w: -3.10054332e-07}
+      scale: {x: .999999762, y: .999999881, z: .999999762}
+      transformModified: 1
+    - name: Bone048
+      position: {x: -.146709442, y: -1.90734859e-08, z: 1.19209287e-09}
+      rotation: {x: -2.32527356e-07, y: 7.92835735e-08, z: .14779532, w: .989017963}
+      scale: {x: 1.00000024, y: 1.00000036, z: 1.00000012}
+      transformModified: 1
+    - name: Bone049
+      position: {x: -.167278901, y: -2.28881831e-07, z: 2.62260436e-08}
+      rotation: {x: -5.8483419e-08, y: 2.40623255e-08, z: -.233342066, w: .972394764}
+      scale: {x: 1.00000012, y: .99999994, z: 1}
+      transformModified: 1
+    - name: Bone050
+      position: {x: -.148127437, y: 7.62939436e-08, z: 1.78813924e-08}
+      rotation: {x: 1.16415322e-10, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Bone055
+      position: {x: -.0303050224, y: .0877089649, z: 3.06367866e-07}
+      rotation: {x: .715567768, y: -.69854337, z: -2.15841538e-07, w: -8.22779498e-07}
+      scale: {x: .999999881, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: Bone054
+      position: {x: -.0346569829, y: .0960004628, z: 3.0875205e-07}
+      rotation: {x: .852117777, y: -.523350179, z: -1.75641944e-07, w: -8.19002935e-07}
+      scale: {x: .99999994, y: .999999881, z: .999999642}
+      transformModified: 1
+    - name: Bone031
+      position: {x: -.123702087, y: .0799906328, z: .0372126848}
+      rotation: {x: .443017513, y: -.354613215, z: -.638247371, w: -.520216584}
+      scale: {x: .999999821, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: Bone029
+      position: {x: -.0971243232, y: .0503865816, z: .0449865758}
+      rotation: {x: .875852823, y: -.482578456, z: 5.38792371e-08, w: -9.36620665e-07}
+      scale: {x: 1, y: .999999702, z: .999999642}
+      transformModified: 1
+    - name: Bone030
+      position: {x: -.0828138739, y: .0532260127, z: .0449902415}
+      rotation: {x: .606458306, y: -.795115292, z: -2.94680291e-07, w: -7.06431365e-07}
+      scale: {x: 1.00000012, y: .99999994, z: .999999881}
+      transformModified: 1
+    - name: Bone031(mirrored)
+      position: {x: -.123702087, y: .0799907073, z: -.037209928}
+      rotation: {x: -.520215809, y: -.638246953, z: -.354614317, w: .443018109}
+      scale: {x: 1.00000024, y: .999999881, z: 1}
+      transformModified: 1
+    - name: Bone029(mirrored)
+      position: {x: -.0971244797, y: .0503866561, z: -.0449897759}
+      rotation: {x: 7.70479744e-07, y: 1.34496872e-07, z: -.482578278, w: .875852883}
+      scale: {x: .999999821, y: 1, z: .999999762}
+      transformModified: 1
+    - name: Bone030(mirrored)
+      position: {x: -.0828137174, y: .0532261282, z: -.0449897759}
+      rotation: {x: -9.01903547e-07, y: -5.70219129e-07, z: .795115769, w: -.60645771}
+      scale: {x: .99999994, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: Bip001 L Clavicle
+      position: {x: .0264605712, y: .00983680692, z: .0531986691}
+      rotation: {x: .577372193, y: .0831007883, z: -.803956926, w: .115710557}
+      scale: {x: .99999994, y: .999999642, z: .999999464}
+      transformModified: 1
+    - name: Bip001 L UpperArm
+      position: {x: -.0848184973, y: -1.90734859e-08, z: 1.52587887e-07}
+      rotation: {x: .0884149373, y: .133182526, z: -.0174490679, w: .986985743}
+      scale: {x: .999999821, y: 1.00000048, z: 1.00000072}
+      transformModified: 1
+    - name: Bip001 L Forearm
+      position: {x: -.24100998, y: 1.90734859e-08, z: -3.81469718e-08}
+      rotation: {x: -.000296969345, y: .00654990366, z: .0349704139, w: .999366879}
+      scale: {x: .999999762, y: .999999523, z: .999999404}
+      transformModified: 1
+    - name: Bone044
+      position: {x: -.215126038, y: .0789247155, z: -.00103649136}
+      rotation: {x: .527749658, y: -.46235922, z: .531162918, w: -.474942505}
+      scale: {x: .999999523, y: .999999762, z: .999999821}
+      transformModified: 1
+    - name: Bone045
+      position: {x: -.163924932, y: 0, z: -3.81469718e-08}
+      rotation: {x: 7.20686728e-08, y: -1.59535048e-07, z: -.0557107925, w: .998446941}
+      scale: {x: 1.00000024, y: 1.00000048, z: 1.00000072}
+      transformModified: 1
+    - name: Bone046
+      position: {x: -.165383264, y: 1.52587887e-07, z: 9.53674295e-09}
+      rotation: {x: -1.03150839e-08, y: 3.5252794e-09, z: .0194548238, w: .999810755}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 L Hand
+      position: {x: -.271872312, y: 4.76837148e-09, z: 7.62939436e-08}
+      rotation: {x: .705109715, y: .0492534377, z: .0492143258, w: -.705671489}
+      scale: {x: 1.00000012, y: 1.00000024, z: .999999881}
+      transformModified: 1
+    - name: Bip001 L Finger1
+      position: {x: -.134482488, y: .000497627247, z: -.0289375689}
+      rotation: {x: .00504214037, y: -.0452161022, z: -.0747079253, w: .996167123}
+      scale: {x: .999999881, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 L Finger11
+      position: {x: -.0384158306, y: -1.90734859e-08, z: 3.81469718e-08}
+      rotation: {x: 8.47529904e-08, y: -5.66862752e-08, z: -.0387470201, w: .999249041}
+      scale: {x: .999999762, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: Bip001 L Finger1Nub
+      position: {x: -.0507005304, y: 0, z: 0}
+      rotation: {x: -7.45058149e-09, y: -2.98023224e-08, z: -1.4901163e-08, w: 1}
+      scale: {x: .99999994, y: 1, z: 1}
+      transformModified: 1
+    - name: Bip001 L Finger4
+      position: {x: -.134464949, y: .000592193566, z: .0404810123}
+      rotation: {x: -.0007100082, y: .00734056905, z: -.0683629885, w: .997633338}
+      scale: {x: .999999881, y: .999999821, z: .999999881}
+      transformModified: 1
+    - name: Bip001 L Finger41
+      position: {x: -.0359422304, y: 0, z: 4.76837148e-09}
+      rotation: {x: 4.67973997e-08, y: -1.15214256e-08, z: -.0187891331, w: .999823451}
+      scale: {x: 1.00000012, y: 1.00000048, z: .99999994}
+      transformModified: 1
+    - name: Bip001 L Finger4Nub
+      position: {x: -.0410660543, y: -1.90734859e-08, z: 0}
+      rotation: {x: 1.39698386e-08, y: 4.65661287e-09, z: -6.50521303e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bip001 L Finger0
+      position: {x: -.0845516175, y: .00566879241, z: -.0577583686}
+      rotation: {x: -.718734562, y: .261641324, z: -.255640894, w: -.591280162}
+      scale: {x: .999999881, y: 1.00000024, z: 1}
+      transformModified: 1
+    - name: Bip001 L Finger01
+      position: {x: -.0388004296, y: 0, z: 1.90734859e-08}
+      rotation: {x: -.0227394775, y: -.027195733, z: -.0264105275, w: .999022484}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    - name: Bip001 L Finger0Nub
+      position: {x: -.0492594913, y: 1.90734859e-08, z: 0}
+      rotation: {x: 3.7252903e-09, y: 1.49011612e-08, z: -5.55111512e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bip001 L Finger2
+      position: {x: -.135120392, y: -.000276985171, z: -.00584676722}
+      rotation: {x: -.00282534119, y: -.0146458494, z: -.0793972388, w: .99673152}
+      scale: {x: .999999702, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Bip001 L Finger21
+      position: {x: -.0448183417, y: 1.90734859e-08, z: 0}
+      rotation: {x: 1.05537751e-07, y: 4.32421636e-08, z: -.0375702828, w: .999293983}
+      scale: {x: 1.00000012, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Bip001 L Finger2Nub
+      position: {x: -.05222122, y: 0, z: 0}
+      rotation: {x: 1.49011612e-08, y: 1.49011612e-08, z: -2.22044605e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Bip001 L Finger3
+      position: {x: -.133915707, y: .00129669183, z: .0186149981}
+      rotation: {x: .00102414528, y: .00255682645, z: -.0756072104, w: .997133911}
+      scale: {x: .999999821, y: .99999994, z: .999999762}
+      transformModified: 1
+    - name: Bip001 L Finger31
+      position: {x: -.0398606099, y: 0, z: 0}
+      rotation: {x: -5.04468609e-08, y: -2.10618339e-07, z: -.0375683904, w: .999294043}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: Bip001 L Finger3Nub
+      position: {x: -.0505751781, y: 1.90734859e-08, z: 1.90734859e-08}
+      rotation: {x: -7.4505806e-09, y: 7.45058149e-09, z: 5.55111578e-17, w: 1}
+      scale: {x: .99999994, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Bip001 R Clavicle
+      position: {x: .0264605712, y: .00983711239, z: -.0531987287}
+      rotation: {x: -.577370882, y: -.083098419, z: -.80395782, w: .11571224}
+      scale: {x: .999999881, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Bip001 R UpperArm
+      position: {x: -.0848183781, y: 9.53674295e-09, z: -3.05175774e-07}
+      rotation: {x: .0884150416, y: .13318342, z: .0174493548, w: -.986985564}
+      scale: {x: 1.00000048, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 R Forearm
+      position: {x: -.241009891, y: 0, z: 0}
+      rotation: {x: .000296907092, y: -.00654969132, z: .0349705778, w: .999366879}
+      scale: {x: .999999523, y: .999999821, z: 1}
+      transformModified: 1
+    - name: Bone044(mirrored)
+      position: {x: -.215542823, y: .0672180578, z: -.000416717521}
+      rotation: {x: .474941373, y: -.531163812, z: .46235922, w: -.527749598}
+      scale: {x: 1, y: .99999994, z: 1.00000048}
+      transformModified: 1
+    - name: Bone045(mirrored)
+      position: {x: -.163925022, y: -7.62939436e-08, z: -7.62939436e-08}
+      rotation: {x: 1.12127182e-07, y: -2.99691095e-07, z: .0557108, w: .998446941}
+      scale: {x: .999999642, y: 1, z: .999999762}
+      transformModified: 1
+    - name: Bone046(mirrored)
+      position: {x: -.165383294, y: -3.05175774e-07, z: -6.67572024e-08}
+      rotation: {x: -1.78663362e-09, y: -1.39690044e-07, z: -.0194546282, w: .999810755}
+      scale: {x: 1.00000012, y: 1.00000012, z: .999999821}
+      transformModified: 1
+    - name: Bip001 R Hand
+      position: {x: -.271872312, y: 4.76837148e-09, z: 3.81469718e-08}
+      rotation: {x: -.705109835, y: -.0492534749, z: .049214296, w: -.705671549}
+      scale: {x: 1, y: .999999642, z: 1}
+      transformModified: 1
+    - name: Bip001 R Finger0
+      position: {x: -.084551543, y: .00566879241, z: .057758376}
+      rotation: {x: .718734682, y: -.261642694, z: -.255641043, w: -.591279387}
+      scale: {x: .999999881, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 R Finger01
+      position: {x: -.0388004668, y: 9.53674295e-09, z: 7.62939436e-08}
+      rotation: {x: .0227392502, y: .0271968227, z: -.0264107659, w: .999022424}
+      scale: {x: 1.00000012, y: .99999994, z: .999999464}
+      transformModified: 1
+    - name: Bip001 R Finger0Nub
+      position: {x: -.0492593385, y: 0, z: 0}
+      rotation: {x: -5.70270605e-25, y: -9.31322575e-09, z: 1, w: 6.12323426e-17}
+      scale: {x: -1, y: -1, z: -1}
+      transformModified: 1
+    - name: Bip001 R Finger1
+      position: {x: -.134482488, y: .000497589121, z: .0289375577}
+      rotation: {x: -.00504197879, y: .0452156551, z: -.0747067183, w: .996167243}
+      scale: {x: .999999881, y: .999999881, z: .999999881}
+      transformModified: 1
+    - name: Bip001 R Finger11
+      position: {x: -.0384157561, y: 0, z: -9.53674295e-09}
+      rotation: {x: -1.20705508e-07, y: 1.788802e-07, z: -.0387485512, w: .999248981}
+      scale: {x: .99999994, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Bip001 R Finger1Nub
+      position: {x: -.0507005304, y: -1.90734859e-08, z: -9.53674295e-09}
+      rotation: {x: -1.11022302e-16, y: 7.4505806e-09, z: 1, w: -1.49011612e-08}
+      scale: {x: -1, y: -1, z: -.99999994}
+      transformModified: 1
+    - name: Bip001 R Finger4
+      position: {x: -.134464875, y: .000592117314, z: -.0404810049}
+      rotation: {x: .000710122462, y: -.00734084006, z: -.068363592, w: .997633219}
+      scale: {x: .999999702, y: 1.00000024, z: .999999881}
+      transformModified: 1
+    - name: Bip001 R Finger41
+      position: {x: -.0359422304, y: -1.90734859e-08, z: 0}
+      rotation: {x: -5.68870355e-08, y: -6.69535254e-08, z: -.0187890977, w: .999823451}
+      scale: {x: 1.00000024, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Bip001 R Finger4Nub
+      position: {x: -.0410661697, y: 7.62939436e-08, z: 0}
+      rotation: {x: 4.30736646e-09, y: -1.86264515e-09, z: 1, w: 6.92554321e-17}
+      scale: {x: -1.00000012, y: -1, z: -1}
+      transformModified: 1
+    - name: Bip001 R Finger3
+      position: {x: -.133915707, y: .0012967682, z: -.0186150167}
+      rotation: {x: -.00102402898, y: -.00255668815, z: -.0756065622, w: .99713397}
+      scale: {x: .999999642, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Bip001 R Finger31
+      position: {x: -.0398604572, y: -1.90734859e-08, z: 0}
+      rotation: {x: -7.52101936e-09, y: -1.67661412e-07, z: -.0375705026, w: .999294043}
+      scale: {x: 1.00000024, y: 1, z: .99999994}
+      transformModified: 1
+    - name: Bip001 R Finger3Nub
+      position: {x: -.0505752563, y: -3.81469718e-08, z: -4.76837148e-09}
+      rotation: {x: -9.31322575e-09, y: 1.11758709e-08, z: 1, w: 2.98023224e-08}
+      scale: {x: -1, y: -1, z: -1}
+      transformModified: 1
+    - name: Bip001 R Finger2
+      position: {x: -.135120317, y: -.000277023297, z: .00584678166}
+      rotation: {x: .00282549276, y: .0146458186, z: -.0793983489, w: .996731341}
+      scale: {x: .999999762, y: 1, z: .999999821}
+      transformModified: 1
+    - name: Bip001 R Finger21
+      position: {x: -.04481842, y: 0, z: 0}
+      rotation: {x: -6.33013215e-08, y: 4.30234159e-08, z: -.0375709943, w: .999293983}
+      scale: {x: .999999821, y: .999999881, z: .999999821}
+      transformModified: 1
+    - name: Bip001 R Finger2Nub
+      position: {x: -.0522211455, y: -1.90734859e-08, z: 0}
+      rotation: {x: 0, y: -0, z: 1, w: 6.12323426e-17}
+      scale: {x: -1, y: -1.00000012, z: -.99999994}
+      transformModified: 1
+    - name: Bip001 L Thigh
+      position: {x: .0961846933, y: -.0230181348, z: .0995525494}
+      rotation: {x: .00898246467, y: -.999344885, z: -.0061404421, w: -.0345176905}
+      scale: {x: 1.00000024, y: 1, z: 1.00000024}
+      transformModified: 1
+    - name: Bip001 L Calf
+      position: {x: -.489500642, y: 0, z: 0}
+      rotation: {x: -4.47304203e-08, y: 2.25690044e-08, z: -.0115834735, w: .999932945}
+      scale: {x: .999999762, y: .99999994, z: .999999762}
+      transformModified: 1
+    - name: Bip001 L Foot
+      position: {x: -.497763127, y: 9.53674295e-09, z: 0}
+      rotation: {x: -.00875748135, y: .0319238901, z: -.0123589002, w: .999375522}
+      scale: {x: 1.00000036, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 L Toe0
+      position: {x: -.122255258, y: .11655806, z: -9.53674295e-09}
+      rotation: {x: 1.55130306e-06, y: 1.4995868e-06, z: -.707106888, w: .707106829}
+      scale: {x: .999999702, y: .999999702, z: .999999821}
+      transformModified: 1
+    - name: Bip001 L Toe0Nub
+      position: {x: -.0841162875, y: 0, z: 0}
+      rotation: {x: -3.01315595e-09, y: -7.01555245e-19, z: 1, w: -2.32830699e-10}
+      scale: {x: -1, y: -1, z: -1}
+      transformModified: 1
+    - name: Bip001 R Thigh
+      position: {x: .0961846933, y: -.0230175816, z: -.0995526165}
+      rotation: {x: .00898258667, y: -.999344885, z: .00613768818, w: .0345177613}
+      scale: {x: .999999702, y: .999999821, z: .999999702}
+      transformModified: 1
+    - name: Bip001 R Calf
+      position: {x: -.489500672, y: -1.7881393e-09, z: 1.90734859e-08}
+      rotation: {x: 2.98213543e-08, y: 6.83992507e-09, z: -.0115834307, w: .999932945}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Bip001 R Foot
+      position: {x: -.497763097, y: 5.96046434e-10, z: -1.90734859e-08}
+      rotation: {x: .00875748135, y: -.0319239385, z: -.0123589132, w: .999375582}
+      scale: {x: 1.00000048, y: 1.00000036, z: 1.00000048}
+      transformModified: 1
+    - name: Bip001 R Toe0
+      position: {x: -.122255236, y: .116558075, z: -1.90734859e-08}
+      rotation: {x: -1.48600839e-06, y: -1.51524534e-06, z: -.707106888, w: .707106769}
+      scale: {x: .999999821, y: .999999583, z: .999999702}
+      transformModified: 1
+    - name: Bip001 R Toe0Nub
+      position: {x: -.084116295, y: 0, z: 0}
+      rotation: {x: 2.32830644e-10, y: 1.45519144e-11, z: 3.72528985e-09, w: 1}
+      scale: {x: 1.00000012, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
