@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 			RaycastHit hit;
 			if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, (1 << 8) | (1 << 9)))
 			{
-				if (Input.GetMouseButtonDown(0))
+				if (Input.GetMouseButton(0))
 				{
 					if (hit.collider.gameObject.layer == 8) currentMovePoint = hit.point;
 					//if (hit.collider.gameObject.layer == 9 && hit.collider.gameObject.GetComponent<Player>()) Target = hit.collider.gameObject.GetComponent<Actor>();
