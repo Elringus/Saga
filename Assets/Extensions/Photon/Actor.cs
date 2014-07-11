@@ -20,6 +20,9 @@ using Camera = UnityEngine.Camera;
 /// </summary>
 public class Actor : MonoBehaviour
 {
+	private Vector3 correctPosition;
+	private Quaternion correctRotation;
+
     /// <summary>
     /// The actor text offset.
     /// </summary>
@@ -112,11 +115,13 @@ public class Actor : MonoBehaviour
 		//	this.SetActorColor(new Color((float)colorBytes[2] / byte.MaxValue, (float)colorBytes[1] / byte.MaxValue, (float)colorBytes[0] / byte.MaxValue));
 		//}
 
-        this.transform.position = this.GetPosition(this.actor.Position);
+		correctPosition = this.GetPosition(this.actor.Position);
+		this.transform.position = Vector3.Lerp(this.transform.position, correctPosition, Time.deltaTime * 15);
         
         if (this.actor.Rotation != null)
         {
-            this.transform.rotation = this.GetRotation(this.actor.Rotation);
+			correctRotation = this.GetRotation(this.actor.Rotation);
+			this.transform.rotation = Quaternion.Lerp(this.transform.rotation, correctRotation, Time.deltaTime * 15);
         }
 
         this.actorText.transform.position = this.transform.position + this.actorTextOffset;
