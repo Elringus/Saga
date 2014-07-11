@@ -21,6 +21,8 @@ using UnityEngine;
 /// </summary>
 public class MmoEngine : Radar, IGameListener
 {
+
+	public GameObject ActorPrefab;
     /// <summary>
     /// EdgeLengthHorizontal / BoxesHorizontal
     /// </summary>
@@ -379,8 +381,10 @@ public class MmoEngine : Radar, IGameListener
         // do not show local actor
         if (actor != engine.Avatar)
         {
-            GameObject actorCube = actor.Rotation != null ? GameObject.CreatePrimitive(PrimitiveType.Cube) : GameObject.CreatePrimitive(PrimitiveType.Cylinder);
-            Actor actorBehaviour = (Actor)actorCube.AddComponent(typeof(Actor));
+            //GameObject actorCube = actor.Rotation != null ? GameObject.CreatePrimitive(PrimitiveType.Cube) : GameObject.CreatePrimitive(PrimitiveType.Cylinder);
+			GameObject newActor = Instantiate(ActorPrefab) as GameObject;
+			newActor.GetComponent<PlayerController>().IsAvatar = false;
+			Actor actorBehaviour = (Actor)newActor.AddComponent(typeof(Actor));
             actorBehaviour.Initialize(actor, this.camHeight);
         }
     }

@@ -23,7 +23,7 @@ public class Actor : MonoBehaviour
     /// <summary>
     /// The actor text offset.
     /// </summary>
-    private readonly Vector3 actorTextOffset = new Vector3(0, 2.6f, 0);
+    private readonly Vector3 actorTextOffset = new Vector3(0, 2, 0);
 
     /// <summary>
     /// The actor.
@@ -79,8 +79,8 @@ public class Actor : MonoBehaviour
         this.actorText.transform.renderer.material.color = Color.white;
 
         this.ShowActor(false);
-        this.transform.localScale = new Vector3(1, 3f, 1);
-        this.transform.renderer.material = (Material)Resources.Load("ActorMaterial");
+        //this.transform.localScale = new Vector3(1, 3f, 1);
+        //this.transform.renderer.material = (Material)Resources.Load("ActorMaterial");
     }
 
     /// <summary>
@@ -105,12 +105,12 @@ public class Actor : MonoBehaviour
         //// textMesh.text = string.Format("{0} ({1},{2})", actor.Name, actor.Position.X, actor.Position.Y);
         textMesh.text = this.actor.Text;
 
-        if (this.color != this.actor.Color)
-        {
-            byte[] colorBytes = BitConverter.GetBytes(this.actor.Color);
-            this.color = this.actor.Color;
-            this.SetActorColor(new Color((float)colorBytes[2] / byte.MaxValue, (float)colorBytes[1] / byte.MaxValue, (float)colorBytes[0] / byte.MaxValue));
-        }
+		//if (this.color != this.actor.Color)
+		//{
+		//	byte[] colorBytes = BitConverter.GetBytes(this.actor.Color);
+		//	this.color = this.actor.Color;
+		//	this.SetActorColor(new Color((float)colorBytes[2] / byte.MaxValue, (float)colorBytes[1] / byte.MaxValue, (float)colorBytes[0] / byte.MaxValue));
+		//}
 
         this.transform.position = this.GetPosition(this.actor.Position);
         
@@ -148,7 +148,7 @@ public class Actor : MonoBehaviour
             return new Vector3(x, terrainHeight + 1.5f, y);
         }
 
-        return new Vector3(x, pos[2] - this.camHeight + 3f, y);
+        return new Vector3(x, pos[2], y);
     }
 
     private Quaternion GetRotation(float[] rotationValue)
@@ -179,9 +179,10 @@ public class Actor : MonoBehaviour
     /// </returns>
     private bool ShowActor(bool show)
     {
-        if (this.transform.renderer.enabled != show)
+        if (this.GetComponentInChildren<SkinnedMeshRenderer>().enabled != show)
         {
-            this.transform.renderer.enabled = show;
+			foreach (var skinRenderer in this.GetComponentsInChildren<SkinnedMeshRenderer>()) skinRenderer.enabled = show;
+            //this.transform.renderer.enabled = show;
             this.actorText.transform.renderer.enabled = show;
             return true;
         }

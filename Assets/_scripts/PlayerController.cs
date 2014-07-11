@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 	public Transform Transform;
 	public float MoveSpeed;
 	public float PointMoveLimit;
+	public bool IsAvatar = true;
 
 	private float currentMoveSpeed;
 	private Vector3 prevPosition;
@@ -23,26 +24,29 @@ public class PlayerController : MonoBehaviour
 
 	private void Update () 
 	{
-		RaycastHit hit;
-		if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, (1 << 8) | (1 << 9)))
+		if (IsAvatar)
 		{
-			if (Input.GetMouseButtonDown(0))
+			RaycastHit hit;
+			if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, (1 << 8) | (1 << 9)))
 			{
-				if (hit.collider.gameObject.layer == 8) currentMovePoint = hit.point;
-				//if (hit.collider.gameObject.layer == 9 && hit.collider.gameObject.GetComponent<Player>()) Target = hit.collider.gameObject.GetComponent<Actor>();
+				if (Input.GetMouseButtonDown(0))
+				{
+					if (hit.collider.gameObject.layer == 8) currentMovePoint = hit.point;
+					//if (hit.collider.gameObject.layer == 9 && hit.collider.gameObject.GetComponent<Player>()) Target = hit.collider.gameObject.GetComponent<Actor>();
+				}
+
+				if (Input.GetMouseButtonDown(1))
+				{
+					//if (hit.collider.gameObject.layer == 9) ((IInteractiveObject)hit.collider.GetComponent(typeof(IInteractiveObject))).Activate(this);
+				}
 			}
 
-			if (Input.GetMouseButtonDown(1))
+			if (Vector3.Distance(Transform.position, currentMovePoint) > PointMoveLimit)
 			{
-				//if (hit.collider.gameObject.layer == 9) ((IInteractiveObject)hit.collider.GetComponent(typeof(IInteractiveObject))).Activate(this);
+				Transform.LookAt(currentMovePoint);
+				Transform.eulerAngles = new Vector3(0, Transform.eulerAngles.y, 0);
+				controller.Move(Transform.TransformDirection(Vector3.forward) * Time.deltaTime * MoveSpeed);
 			}
-		}
-
-		if (Vector3.Distance(Transform.position, currentMovePoint) > PointMoveLimit)
-		{
-			Transform.LookAt(currentMovePoint);
-			Transform.eulerAngles = new Vector3(0, Transform.eulerAngles.y, 0);
-			controller.Move(Transform.TransformDirection(Vector3.forward) * Time.deltaTime * MoveSpeed);
 		}
 
 		if (!controller.isGrounded) controller.Move(Vector3.down * Time.deltaTime * 9f);

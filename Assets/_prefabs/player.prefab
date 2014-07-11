@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 143: {fileID: 14300000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -1574,7 +1575,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: .363139182, z: 0, w: .93173492}
-  m_LocalPosition: {x: -.2849617, y: -.976822555, z: .0686473846}
+  m_LocalPosition: {x: 1033.93945, y: 10.7271261, z: 974.490601}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400204}
@@ -2959,6 +2960,21 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_HasTransformHierarchy: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e279d2b4a1e653140afff2f8d5db4fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Transform: {fileID: 0}
+  MoveSpeed: 5
+  PointMoveLimit: .5
+  IsAvatar: 1
 --- !u!137 &13700002
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
