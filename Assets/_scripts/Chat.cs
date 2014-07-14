@@ -57,7 +57,8 @@ public class Chat : IPhotonPeerListener
 
 	public void SendMessage ()
 	{
-		var parameters = new Dictionary<byte, object> { { 1, ChatGUI.ChatInput } };
+		var parameters = new Dictionary<byte, object> { { 1, string.Format("[{0}] {1}: {2}",
+				DateTime.Now.ToString("HH:mm:ss"), MmoEngine.I.engine.Avatar.Text, ChatGUI.ChatInput) } };
 		peer.OpCustom(1, parameters, true);
 		ChatGUI.ChatInput = string.Empty;
 	}
@@ -72,8 +73,7 @@ public class Chat : IPhotonPeerListener
 		//ChatGUI.Messages.Add("Event: " + eventData.Code);
 		if (eventData.Code == 1)
 		{
-			ChatGUI.Messages.Add(string.Format("[{0}] {1}: {2}",
-				DateTime.Now.ToString("HH:mm:ss"), MmoEngine.I.engine.Avatar.Text, eventData.Parameters[1]));
+			ChatGUI.Messages.Add(eventData.Parameters[1].ToString());
 		}
 	}
 
