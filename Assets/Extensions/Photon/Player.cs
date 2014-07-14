@@ -13,6 +13,8 @@ using Photon.MmoDemo.Client;
 
 using UnityEngine;
 
+using System.Collections.Generic;
+
 /// <summary>
 /// The player.
 /// </summary>
@@ -22,6 +24,10 @@ public class Player : MonoBehaviour
     /// The change text.
     /// </summary>
     private bool changeText = false;
+
+    public float MaxHP { get; set; }
+
+    public float CurrHP { get; set; }
 
     /// <summary>
     /// The engine.
@@ -37,7 +43,6 @@ public class Player : MonoBehaviour
     /// The last move position.
     /// </summary>
     private Vector3 lastMovePosition;
-
 
     /// <summary>
     /// The last move rotation.
@@ -95,6 +100,8 @@ public class Player : MonoBehaviour
     public void Initialize(Game engine)
     {
         this.nextMoveTime = 0;
+        MaxHP = 120;
+        CurrHP = MaxHP;
         this.engine = engine;
         this.nameText = (GUIText)GameObject.Find("PlayerNamePrefab").GetComponent("GUIText");
         this.viewText = (GUIText)GameObject.Find("ViewDistancePrefab").GetComponent("GUIText");
@@ -119,6 +126,7 @@ public class Player : MonoBehaviour
                 this.nameText.text = this.engine.Avatar.Text;
                 this.viewText.text = string.Format("{0:0} x {1:0}", this.engine.Avatar.ViewDistanceEnter[0], this.engine.Avatar.ViewDistanceEnter[1]);
                 this.Move();
+                this.HPUpdate();
                 this.ReadKeyboardInput();
             }
         }
@@ -146,6 +154,18 @@ public class Player : MonoBehaviour
             // up to 10 times per second
             this.nextMoveTime = Time.time + 0.1f;
         }
+    }
+
+    private void HPUpdate()
+    {
+        Dictionary<byte, object> parameter = new Dictionary<byte, object>()
+      {
+        {
+          (byte) 103,
+          (object) CurrHP
+        }
+      };
+        //engine.SendOperation(Photon.MmoDemo.Common.OperationCode.ChangeHP, parameter,true, Settings.ItemChannel);
     }
 
     /// <summary>

@@ -28,6 +28,9 @@ public class Actor : MonoBehaviour
     /// </summary>
     private readonly Vector3 actorTextOffset = new Vector3(0, 2, 0);
 
+    public float MaxHP { get; set; }
+
+    public float CurrHP { get; set; }
     /// <summary>
     /// The actor.
     /// </summary>
@@ -154,6 +157,11 @@ public class Actor : MonoBehaviour
         }
 
         return new Vector3(x, pos[2], y);
+    }
+
+    private void HPUpdate()
+    {
+
     }
 
     private Quaternion GetRotation(float[] rotationValue)
