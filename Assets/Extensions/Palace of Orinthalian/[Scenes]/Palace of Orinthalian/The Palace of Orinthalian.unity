@@ -9483,7 +9483,7 @@ GameObject:
   - 33: {fileID: 594285483}
   - 23: {fileID: 594285482}
   - 64: {fileID: 594285481}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PoO_WoodenRoof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9916,7 +9916,7 @@ GameObject:
   - 33: {fileID: 631287689}
   - 23: {fileID: 631287688}
   - 95: {fileID: 631287687}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PoO_IvyExterior
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15200,7 +15200,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 292b66ac2171249ef8f8c3e8f032ee0f, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 292b66ac2171249ef8f8c3e8f032ee0f, type: 3}
@@ -22815,7 +22815,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100018, guid: 0bbb04ba5bb054924ac835769e1496d5, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100020, guid: 0bbb04ba5bb054924ac835769e1496d5, type: 3}
       propertyPath: m_Layer
@@ -22839,7 +22839,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100016, guid: 0bbb04ba5bb054924ac835769e1496d5, type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0bbb04ba5bb054924ac835769e1496d5, type: 3}
@@ -30003,7 +30003,7 @@ GameObject:
   - 33: {fileID: 2057258474}
   - 23: {fileID: 2057258473}
   - 64: {fileID: 2057258472}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: PoO_WallsUpper
   m_TagString: Untagged
   m_Icon: {fileID: 0}

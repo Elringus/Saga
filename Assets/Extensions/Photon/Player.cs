@@ -172,12 +172,6 @@ public class Player : MonoBehaviour, IActor
         }
     }
 
-	private void OnGUI ()
-	{
-		GUILayout.Box(HP.ToString());
-	}
-
-
     /// <summary>
     /// The read keyboard input.
     /// </summary>
