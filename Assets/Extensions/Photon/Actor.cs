@@ -115,7 +115,7 @@ public class Actor : MonoBehaviour, IActor
 
         TextMesh textMesh = (TextMesh)this.actorText.GetComponent(typeof(TextMesh));
         //// textMesh.text = string.Format("{0} ({1},{2})", actor.Name, actor.Position.X, actor.Position.Y);
-        textMesh.text = HP + "HP " + this.actor.Text;
+        textMesh.text = this.actor.Text;
 
 		//if (this.color != this.actor.Color)
 		//{
