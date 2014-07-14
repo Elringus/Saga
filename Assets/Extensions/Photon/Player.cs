@@ -28,17 +28,39 @@ public class Player : MonoBehaviour, IActor
 	public string ID { get; set; }
 
 	private int _hp;
-	public int HP {
-		get
-		{
-			return _hp;
-		}
-		set 
-		{
-			_hp = value;
-			if (engine != null) this.engine.Avatar.SetText(HP.ToString() + "HP " + this.engine.Avatar.Text.Remove(0, HP < 10 ? 4 : 5));
-		}
-	}
+    public int HP
+    {
+        get
+        {
+            return _hp;
+        }
+        set
+        {
+            _hp = value;
+            if (engine != null) SetAvatarText();
+        }
+    }
+
+    private bool isdead = false;
+    private void SetAvatarText()
+    {
+        string text=this.engine.Avatar.Text;
+        int rCount=5;
+        if (HP < 10)
+            rCount = 4;
+
+        text.Remove(0,rCount);
+
+        if (HP > 0)
+            this.engine.Avatar.SetText(HP.ToString() + "HP " + text);
+        else
+        {
+            if (isdead)
+                text.Remove(0, 3);
+            this.engine.Avatar.SetText("[Dead] " + text);
+            isdead = true;
+        }
+    }
 
     /// <summary>
     /// The engine.
@@ -199,7 +221,7 @@ public class Player : MonoBehaviour, IActor
                 return;
             }
 
-			this.engine.Avatar.SetText(HP.ToString() + "HP " + this.engine.Avatar.Text.Remove(0, HP < 10 ? 4 : 5) + Input.inputString);
+            SetAvatarText();
             return;
         }
 
