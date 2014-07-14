@@ -63,6 +63,12 @@ public class Chat : IPhotonPeerListener
 		ChatGUI.ChatInput = string.Empty;
 	}
 
+	public void Attack (string actorID, int damage)
+	{
+		var parameters = new Dictionary<byte, object> { { 2, new object[] { actorID, damage } } };
+		peer.OpCustom(2, parameters, true);
+	}
+
 	public void DebugReturn (DebugLevel level, string message)
 	{
 		ChatGUI.Messages.Add(level + ": " + message);
@@ -70,10 +76,18 @@ public class Chat : IPhotonPeerListener
 
 	public void OnEvent (EventData eventData)
 	{
-		//ChatGUI.Messages.Add("Event: " + eventData.Code);
-		if (eventData.Code == 1)
+		switch (eventData.Code)
 		{
-			ChatGUI.Messages.Add(eventData.Parameters[1].ToString());
+			case 1: 
+				ChatGUI.Messages.Add(eventData.Parameters[1].ToString());
+				break;
+			case 2:
+				object[] prm = eventData.Parameters[2] as object[];
+				string id = prm[0] as string;
+				int damage = (int)prm[1];
+
+				MmoEngine.I.actors[id].HP -= damage;
+				break;
 		}
 	}
 

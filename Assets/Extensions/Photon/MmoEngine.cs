@@ -14,6 +14,8 @@ using ExitGames.Client.Photon;
 using Photon.MmoDemo.Client;
 using Photon.MmoDemo.Common;
 
+using System.Collections.Generic;
+
 using UnityEngine;
 
 /// <summary>
@@ -33,6 +35,8 @@ public class MmoEngine : Radar, IGameListener
 		}
 	}
 	#endregion
+
+	public Dictionary<string, IActor> actors = new Dictionary<string, IActor>();
 
 	public GameObject ActorPrefab;
     /// <summary>

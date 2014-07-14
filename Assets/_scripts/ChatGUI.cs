@@ -9,7 +9,7 @@ public class ChatGUI : MonoBehaviour
 	private int chatHeight = 250;
 	private Vector2 chatScroll = Vector2.zero;
 
-	private Chat chat;
+	public static Chat chat;
 
 	private void Awake () 
 	{

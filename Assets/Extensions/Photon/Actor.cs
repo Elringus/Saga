@@ -18,7 +18,7 @@ using Camera = UnityEngine.Camera;
 /// <summary>
 /// The actor.
 /// </summary>
-public class Actor : MonoBehaviour
+public class Actor : MonoBehaviour, IActor
 {
 	private Vector3 correctPosition;
 	private Quaternion correctRotation;
@@ -28,9 +28,9 @@ public class Actor : MonoBehaviour
     /// </summary>
     private readonly Vector3 actorTextOffset = new Vector3(0, 2, 0);
 
-    public float MaxHP { get; set; }
+	public string ID { get; set; }
+	public int HP { get; set; }
 
-    public float CurrHP { get; set; }
     /// <summary>
     /// The actor.
     /// </summary>
@@ -78,6 +78,11 @@ public class Actor : MonoBehaviour
         this.actor = actor;
         this.camHeight = camHeight;
 
+		this.ID = actor.Id;
+		this.HP = 10;
+
+		MmoEngine.I.actors.Add(ID, this);
+
         this.actorText = (GameObject)Instantiate(Resources.Load("ActorName"));
         this.actorText.name = "ActorText" + actor.Id;
 
@@ -94,6 +99,7 @@ public class Actor : MonoBehaviour
     /// </summary>
     public void Start()
     {
+
     }
 
     /// <summary>
@@ -109,7 +115,7 @@ public class Actor : MonoBehaviour
 
         TextMesh textMesh = (TextMesh)this.actorText.GetComponent(typeof(TextMesh));
         //// textMesh.text = string.Format("{0} ({1},{2})", actor.Name, actor.Position.X, actor.Position.Y);
-        textMesh.text = this.actor.Text;
+        textMesh.text = HP + "HP " + this.actor.Text;
 
 		//if (this.color != this.actor.Color)
 		//{

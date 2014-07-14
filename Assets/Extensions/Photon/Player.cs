@@ -18,16 +18,27 @@ using System.Collections.Generic;
 /// <summary>
 /// The player.
 /// </summary>
-public class Player : MonoBehaviour
+public class Player : MonoBehaviour, IActor
 {
     /// <summary>
     /// The change text.
     /// </summary>
     private bool changeText = false;
 
-    public float MaxHP { get; set; }
+	public string ID { get; set; }
 
-    public float CurrHP { get; set; }
+	private int _hp;
+	public int HP {
+		get
+		{
+			return _hp;
+		}
+		set 
+		{
+			_hp = value;
+			if (engine != null) this.engine.Avatar.SetText(HP.ToString() + "HP " + this.engine.Avatar.Text.Remove(0, HP < 10 ? 4 : 5));
+		}
+	}
 
     /// <summary>
     /// The engine.
@@ -99,12 +110,17 @@ public class Player : MonoBehaviour
     /// </param>
     public void Initialize(Game engine)
     {
+		this.ID = engine.Avatar.Id;
+		this.HP = 10;
+
+		MmoEngine.I.actors.Add(ID, this);
+		
         this.nextMoveTime = 0;
-        MaxHP = 120;
-        CurrHP = MaxHP;
         this.engine = engine;
         this.nameText = (GUIText)GameObject.Find("PlayerNamePrefab").GetComponent("GUIText");
         this.viewText = (GUIText)GameObject.Find("ViewDistancePrefab").GetComponent("GUIText");
+
+		this.engine.Avatar.SetText(HP.ToString() + "HP " + this.engine.Avatar.Text);
     }
 
     /// <summary>
@@ -112,6 +128,7 @@ public class Player : MonoBehaviour
     /// </summary>
     public void Start()
     {
+
     }
 
     /// <summary>
@@ -126,7 +143,6 @@ public class Player : MonoBehaviour
                 this.nameText.text = this.engine.Avatar.Text;
                 this.viewText.text = string.Format("{0:0} x {1:0}", this.engine.Avatar.ViewDistanceEnter[0], this.engine.Avatar.ViewDistanceEnter[1]);
                 this.Move();
-                this.HPUpdate();
                 this.ReadKeyboardInput();
             }
         }
@@ -156,17 +172,11 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void HPUpdate()
-    {
-        Dictionary<byte, object> parameter = new Dictionary<byte, object>()
-      {
-        {
-          (byte) 103,
-          (object) CurrHP
-        }
-      };
-        //engine.SendOperation(Photon.MmoDemo.Common.OperationCode.ChangeHP, parameter,true, Settings.ItemChannel);
-    }
+	private void OnGUI ()
+	{
+		GUILayout.Box(HP.ToString());
+	}
+
 
     /// <summary>
     /// The read keyboard input.
@@ -187,7 +197,7 @@ public class Player : MonoBehaviour
                 {
                     if (this.engine.Avatar.Text.Length > 0)
                     {
-                        this.engine.Avatar.SetText(this.engine.Avatar.Text.Remove(this.engine.Avatar.Text.Length - 1));
+						this.engine.Avatar.SetText(this.engine.Avatar.Text.Remove(this.engine.Avatar.Text.Length - 1));
                         this.lastKeyPress = Time.time;
                     }
                 }
@@ -195,7 +205,7 @@ public class Player : MonoBehaviour
                 return;
             }
 
-            this.engine.Avatar.SetText(this.engine.Avatar.Text + Input.inputString);
+			this.engine.Avatar.SetText(HP.ToString() + "HP " + this.engine.Avatar.Text.Remove(0, HP < 10 ? 4 : 5) + Input.inputString);
             return;
         }
 

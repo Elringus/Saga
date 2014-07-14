@@ -26,6 +26,8 @@ public class PlayerController : MonoBehaviour
 	{
 		if (IsAvatar)
 		{
+			if (Input.GetKeyUp(KeyCode.Alpha1)) ChatGUI.chat.Attack(GetComponent<Player>().ID, 1);
+
 			RaycastHit hit;
 			if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, (1 << 8) | (1 << 9)))
 			{
