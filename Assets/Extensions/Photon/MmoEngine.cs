@@ -22,6 +22,18 @@ using UnityEngine;
 public class MmoEngine : Radar, IGameListener
 {
 
+	#region SINGLETON
+	private static MmoEngine _instance;
+	public static MmoEngine I
+	{
+		get
+		{
+			if (_instance == null) _instance = FindObjectOfType(typeof(MmoEngine)) as MmoEngine;
+			return _instance;
+		}
+	}
+	#endregion
+
 	public GameObject ActorPrefab;
     /// <summary>
     /// EdgeLengthHorizontal / BoxesHorizontal
@@ -41,7 +53,7 @@ public class MmoEngine : Radar, IGameListener
     /// <summary>
     /// The engine.
     /// </summary>
-    private Game engine;
+    public Game engine;
 
     /// <summary>
     /// Gets a value indicating whether IsDebugLogEnabled.
@@ -59,6 +71,7 @@ public class MmoEngine : Radar, IGameListener
     /// </summary>
     public void OnApplicationQuit()
     {
+		_instance = null;
         try
         {
             this.engine.Disconnect();
@@ -117,12 +130,13 @@ public class MmoEngine : Radar, IGameListener
 
             Settings settings = Settings.GetDefaultSettings();
             this.engine = new Game(this, settings, "Unity");
-            this.engine.Avatar.SetText("Unity");
+            this.engine.Avatar.SetText("Player");
 
             GameObject player = GameObject.Find("player");
             this.engine.Avatar.MoveAbsolute(Player.GetPosition(player.transform.position), Player.GetRotation(player.transform.rotation.eulerAngles));
             this.engine.Avatar.ResetPreviousPosition();
 
+			ChatGUI.Messages.Add("Initializing MMOEngine...");
             Photon.MmoDemo.Client.PhotonPeer peer = new Photon.MmoDemo.Client.PhotonPeer(this.engine, settings.UseTcp);
             this.engine.Initialize(peer);
 
@@ -265,6 +279,7 @@ public class MmoEngine : Radar, IGameListener
     public void OnConnect(Game game)
     {
         Debug.Log("connected");
+		ChatGUI.Messages.Add("Connected to MMOEngine at " + game.Settings.ServerAddress);
     }
 
     /// <summary>
@@ -279,6 +294,7 @@ public class MmoEngine : Radar, IGameListener
     public void OnDisconnect(Game game, StatusCode returnCode)
     {
         Debug.Log("disconnected");
+		ChatGUI.Messages.Add("Disconnected from MMOEngine");
     }
 
     /// <summary>
@@ -300,6 +316,7 @@ public class MmoEngine : Radar, IGameListener
             }
 
             this.CreateActor(game, item);
+			ChatGUI.Messages.Add("Added item " + item.Id);
         }
     }
 
@@ -323,6 +340,7 @@ public class MmoEngine : Radar, IGameListener
             {
                 Debug.Log("destroy item " + item.Id);
             }
+			ChatGUI.Messages.Add("Removed item " + item.Id);
         }
         else
         {
