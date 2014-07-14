@@ -41,24 +41,27 @@ public class Player : MonoBehaviour, IActor
         }
     }
 
-    private bool isdead = false;
+    private bool isDead = false;
     private void SetAvatarText()
     {
+        if (changeText)
+            return;
+
         string text=this.engine.Avatar.Text;
         int rCount=5;
         if (HP < 10)
             rCount = 4;
 
-        text.Remove(0,rCount);
+        text = text.Remove(0,rCount);
 
         if (HP > 0)
             this.engine.Avatar.SetText(HP.ToString() + "HP " + text);
         else
         {
-            if (isdead)
-                text.Remove(0, 3);
+            if (isDead)
+                text = text.Remove(0, 3);
             this.engine.Avatar.SetText("[Dead] " + text);
-            isdead = true;
+            isDead = true;
         }
     }
 
@@ -220,8 +223,8 @@ public class Player : MonoBehaviour, IActor
 
                 return;
             }
-
-            SetAvatarText();
+            engine.Avatar.SetText(this.engine.Avatar.Text + Input.inputString);
+            //SetAvatarText();
             return;
         }
 
