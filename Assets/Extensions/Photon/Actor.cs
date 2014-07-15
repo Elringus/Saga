@@ -86,6 +86,7 @@ public class Actor : MonoBehaviour, IActor
 		this.ID = actor.Id;
 
         MaxHP = 25;
+		HP = MaxHP;
         this.HP = MaxHP;
 
 		MmoEngine.I.actors.Add(ID, this);
@@ -128,7 +129,7 @@ public class Actor : MonoBehaviour, IActor
         textMesh.text = this.actor.Text;
 
 		actorHP.transform.position = Camera.main.WorldToViewportPoint(transform.position + new Vector3(0, 2));
-		actorHP.pixelInset = new Rect((float)Screen.width * -193.5f / 1589, (float)Screen.height * -29 / 894, (float)Screen.width * (245 + HP * MaxHP * 4) / 1589, (float)Screen.height * 55 / 894);
+		actorHP.pixelInset = new Rect((float)Screen.width * -193.5f / 1589, (float)Screen.height * -29 / 894, (float)Screen.width * (245 + MaxHP / HP * 140) / 1589, (float)Screen.height * 55 / 894);
 		actorHP.transform.GetChild(0).GetComponent<GUITexture>().pixelInset = new Rect((float)Screen.width * -64 / 1589, (float)Screen.height * -29 / 894, (float)Screen.width * 126 / 1589, (float)Screen.height * 55 / 894);
 
 		correctPosition = this.GetPosition(this.actor.Position);
