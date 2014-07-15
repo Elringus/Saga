@@ -26,10 +26,16 @@ public class Actor : MonoBehaviour, IActor
     /// <summary>
     /// The actor text offset.
     /// </summary>
-    private readonly Vector3 actorTextOffset = new Vector3(0, 2, 0);
+    private readonly Vector3 actorTextOffset = new Vector3(0, 2.2f, 0);
 
 	public string ID { get; set; }
-	public int HP { get; set; }
+	[SerializeField]
+	private int _hp;
+	public int HP
+	{
+		get { return _hp; }
+		set { _hp = value; }
+	}
 
     public int MaxHP { get; set; }
 
@@ -42,6 +48,7 @@ public class Actor : MonoBehaviour, IActor
     /// The actor text.
     /// </summary>
     private GameObject actorText;
+	private GUITexture actorHP;
 
     /// <summary>
     /// The cam height.
@@ -58,6 +65,7 @@ public class Actor : MonoBehaviour, IActor
     /// </summary>
     public void Destroy()
     {
+		Destroy(this.actorHP.gameObject);
         Destroy(this.actorText);
         Destroy(this.gameObject);
         Destroy(this);
@@ -90,6 +98,9 @@ public class Actor : MonoBehaviour, IActor
         this.actorText = (GameObject)Instantiate(Resources.Load("ActorName"));
         this.actorText.name = "ActorText" + actor.Id;
 
+		this.actorHP = ((GameObject)Instantiate(Resources.Load("ActorHPPrefab"))).GetComponent<GUITexture>();
+		this.actorHP.name = "ActorHP" + actor.Id;
+
         // this.actorText.transform.localScale = new Vector3(this.actorHeight / 8f, this.actorHeight / 8f, this.actorHeight / 8f);
         this.actorText.transform.renderer.material.color = Color.white;
 
@@ -120,6 +131,10 @@ public class Actor : MonoBehaviour, IActor
         TextMesh textMesh = (TextMesh)this.actorText.GetComponent(typeof(TextMesh));
         //// textMesh.text = string.Format("{0} ({1},{2})", actor.Name, actor.Position.X, actor.Position.Y);
         textMesh.text = this.actor.Text;
+
+		actorHP.transform.position = Camera.main.WorldToViewportPoint(transform.position + new Vector3(0, 2));
+		actorHP.pixelInset = new Rect((float)Screen.width * -193.5f / 1589, (float)Screen.height * -29 / 894, (float)Screen.width * (245 + HP * 14) / 1589, (float)Screen.height * 55 / 894);
+		actorHP.transform.GetChild(0).GetComponent<GUITexture>().pixelInset = new Rect((float)Screen.width * -64 / 1589, (float)Screen.height * -29 / 894, (float)Screen.width * 126 / 1589, (float)Screen.height * 55 / 894);
 
 		//if (this.color != this.actor.Color)
 		//{
