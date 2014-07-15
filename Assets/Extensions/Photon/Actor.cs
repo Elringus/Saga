@@ -26,7 +26,7 @@ public class Actor : MonoBehaviour, IActor
     /// <summary>
     /// The actor text offset.
     /// </summary>
-    private readonly Vector3 actorTextOffset = new Vector3(0, 2, 0);
+	private readonly Vector3 actorTextOffset = new Vector3(0, 2.2f, 0);
 
 	public string ID { get; set; }
 	public int HP { get; set; }
@@ -42,6 +42,8 @@ public class Actor : MonoBehaviour, IActor
     /// The actor text.
     /// </summary>
     private GameObject actorText;
+	private GUITexture actorHP;
+
 
     /// <summary>
     /// The cam height.
@@ -58,6 +60,7 @@ public class Actor : MonoBehaviour, IActor
     /// </summary>
     public void Destroy()
     {
+		Destroy(this.actorHP.gameObject);
         Destroy(this.actorText);
         Destroy(this.gameObject);
         Destroy(this);
@@ -90,6 +93,9 @@ public class Actor : MonoBehaviour, IActor
         this.actorText = (GameObject)Instantiate(Resources.Load("ActorName"));
         this.actorText.name = "ActorText" + actor.Id;
 
+		this.actorHP = ((GameObject)Instantiate(Resources.Load("ActorHPPrefab"))).GetComponent<GUITexture>();
+		this.actorHP.name = "ActorHP" + actor.Id;
+
         // this.actorText.transform.localScale = new Vector3(this.actorHeight / 8f, this.actorHeight / 8f, this.actorHeight / 8f);
         this.actorText.transform.renderer.material.color = Color.white;
 
@@ -121,12 +127,9 @@ public class Actor : MonoBehaviour, IActor
         //// textMesh.text = string.Format("{0} ({1},{2})", actor.Name, actor.Position.X, actor.Position.Y);
         textMesh.text = this.actor.Text;
 
-		//if (this.color != this.actor.Color)
-		//{
-		//	byte[] colorBytes = BitConverter.GetBytes(this.actor.Color);
-		//	this.color = this.actor.Color;
-		//	this.SetActorColor(new Color((float)colorBytes[2] / byte.MaxValue, (float)colorBytes[1] / byte.MaxValue, (float)colorBytes[0] / byte.MaxValue));
-		//}
+		actorHP.transform.position = Camera.main.WorldToViewportPoint(transform.position + new Vector3(0, 2));
+		actorHP.pixelInset = new Rect((float)Screen.width * -193.5f / 1589, (float)Screen.height * -29 / 894, (float)Screen.width * (245 + HP * MaxHP * 4) / 1589, (float)Screen.height * 55 / 894);
+		actorHP.transform.GetChild(0).GetComponent<GUITexture>().pixelInset = new Rect((float)Screen.width * -64 / 1589, (float)Screen.height * -29 / 894, (float)Screen.width * 126 / 1589, (float)Screen.height * 55 / 894);
 
 		correctPosition = this.GetPosition(this.actor.Position);
 		this.transform.position = Vector3.Lerp(this.transform.position, correctPosition, Time.deltaTime * 15);
