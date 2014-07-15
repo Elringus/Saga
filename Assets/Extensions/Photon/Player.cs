@@ -29,45 +29,11 @@ public class Player : MonoBehaviour, IActor
 
 	public string ID { get; set; }
 
-	private int _hp;
-    public int HP
-    {
-        get
-        {
-            return _hp;
-        }
-        set
-        {
-            _hp = value;
-            if (engine != null) SetAvatarText();
-        }
-    }
+    public int HP { get; set; }
 
     public int MaxHP { get; set; }
 
     private bool isDead = false;
-    private void SetAvatarText()
-    {
-        if (changeText)
-            return;
-
-        string text=this.engine.Avatar.Text;
-        int rCount=5;
-        if (HP < 10)
-            rCount = 4;
-
-        text = text.Remove(0,rCount);
-
-        if (HP > 0)
-            this.engine.Avatar.SetText(HP.ToString() + "HP " + text);
-        else
-        {
-            if (isDead)
-                text = text.Remove(0, 3);
-            this.engine.Avatar.SetText("[Dead] " + text);
-            isDead = true;
-        }
-    }
 
     /// <summary>
     /// The engine.
@@ -154,7 +120,7 @@ public class Player : MonoBehaviour, IActor
         this.nameText = (GUIText)GameObject.Find("PlayerNamePrefab").GetComponent("GUIText");
         this.viewText = (GUIText)GameObject.Find("ViewDistancePrefab").GetComponent("GUIText");
 
-		this.engine.Avatar.SetText(HP.ToString() + "HP " + this.engine.Avatar.Text);
+		this.engine.Avatar.SetText(this.engine.Avatar.Text);
     }
 
     /// <summary>
@@ -243,7 +209,6 @@ public class Player : MonoBehaviour, IActor
                 return;
             }
             engine.Avatar.SetText(this.engine.Avatar.Text + Input.inputString);
-            //SetAvatarText();
             return;
         }
 
@@ -262,76 +227,5 @@ public class Player : MonoBehaviour, IActor
         {
             MakeAttack(5);
         }
-
-       /* // center
-        if (Input.GetKey(KeyCode.Keypad5) || Input.GetKey(KeyCode.C))
-        {
-            if (this.lastKeyPress + 0.1f < Time.time)
-            {
-                float height = Terrain.activeTerrain.SampleHeight(new Vector3(1000, 0, 1000));
-                this.transform.position = new Vector3(1000, height + 1, 1000);
-                this.lastKeyPress = Time.time;
-            }
-        }
-
-        // view distance
-        if (Input.GetKey(KeyCode.KeypadPlus))
-        {
-            if (this.lastKeyPress + 0.05f < Time.time)
-            {
-                float[] viewDistance = (float[])this.engine.Avatar.ViewDistanceEnter.Clone();
-                viewDistance[0] = Mathf.Min(this.engine.WorldData.Width, viewDistance[0] + 1);
-                viewDistance[1] = Mathf.Min(this.engine.WorldData.Height, viewDistance[1] + 1);
-                InterestArea cam;
-                this.engine.TryGetCamera(0, out cam);
-                cam.SetViewDistance(viewDistance);
-                this.lastKeyPress = Time.time;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.KeypadMinus))
-        {
-            if (this.lastKeyPress + 0.05f < Time.time)
-            {
-                float[] viewDistance = (float[])this.engine.Avatar.ViewDistanceEnter.Clone();
-                viewDistance[0] = Mathf.Max(this.engine.WorldData.Width, viewDistance[0] - 1);
-                viewDistance[1] = Mathf.Max(this.engine.WorldData.Height, viewDistance[1] - 1);
-                InterestArea cam;
-                this.engine.TryGetCamera(0, out cam);
-                cam.SetViewDistance(viewDistance);
-                this.lastKeyPress = Time.time;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.KeypadEnter))
-        {
-            if (this.lastKeyPress + 0.05f < Time.time)
-            {
-                InterestArea cam;
-                this.engine.TryGetCamera(0, out cam);
-                cam.ResetViewDistance();
-                this.lastKeyPress = Time.time;
-            }
-        }
-
-        if (Input.GetKey(KeyCode.F5) || Input.GetKey(KeyCode.E))
-        {
-            if (this.lastKeyPress + 0.5f < Time.time)
-            {
-                InterestArea area;
-                if (this.engine.TryGetCamera(1, out area))
-                {
-                    GameObject.Find("Sphere").GetComponent<RemoteCam>().Destroy();
-                }
-
-                Debug.Log("create interest area");
-                GameObject actorCube = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                RemoteCam remoteCam = actorCube.AddComponent<RemoteCam>();
-                remoteCam.Initialize(this.engine, 1, this.transform.position, UnityEngine.Camera.main.transform.forward);
-
-                this.lastKeyPress = Time.time;
-            }
-        }
-        */
     }
 }
