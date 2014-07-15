@@ -140,7 +140,7 @@ public class MmoEngine : Radar, IGameListener
             this.engine.Avatar.MoveAbsolute(Player.GetPosition(player.transform.position), Player.GetRotation(player.transform.rotation.eulerAngles));
             this.engine.Avatar.ResetPreviousPosition();
 
-			ChatGUI.Messages.Add("Initializing MMOEngine...");
+			ChatGUI.MessagesTab1.Add("Initializing MMOEngine...");
             Photon.MmoDemo.Client.PhotonPeer peer = new Photon.MmoDemo.Client.PhotonPeer(this.engine, settings.UseTcp);
             this.engine.Initialize(peer);
 
@@ -283,7 +283,7 @@ public class MmoEngine : Radar, IGameListener
     public void OnConnect(Game game)
     {
         Debug.Log("connected");
-		ChatGUI.Messages.Add("Connected to MMOEngine at " + game.Settings.ServerAddress);
+		ChatGUI.MessagesTab1.Add("Connected to MMOEngine at " + game.Settings.ServerAddress);
     }
 
     /// <summary>
@@ -298,7 +298,7 @@ public class MmoEngine : Radar, IGameListener
     public void OnDisconnect(Game game, StatusCode returnCode)
     {
         Debug.Log("disconnected");
-		ChatGUI.Messages.Add("Disconnected from MMOEngine");
+		ChatGUI.MessagesTab1.Add("Disconnected from MMOEngine");
     }
 
     /// <summary>
@@ -320,7 +320,7 @@ public class MmoEngine : Radar, IGameListener
             }
 
             this.CreateActor(game, item);
-			ChatGUI.Messages.Add("Added item " + item.Id);
+			ChatGUI.MessagesTab1.Add("Added item " + item.Id);
         }
     }
 
@@ -344,7 +344,7 @@ public class MmoEngine : Radar, IGameListener
             {
                 Debug.Log("destroy item " + item.Id);
             }
-			ChatGUI.Messages.Add("Removed item " + item.Id);
+			ChatGUI.MessagesTab1.Add("Removed item " + item.Id);
         }
         else
         {

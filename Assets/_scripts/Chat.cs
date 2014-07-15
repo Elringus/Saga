@@ -15,39 +15,9 @@ public class Chat : IPhotonPeerListener
 	{
 		peer = new PhotonPeer(this, ConnectionProtocol.Tcp);
 
-		ChatGUI.Messages.Add("Connecting to chat server...");
+		ChatGUI.MessagesTab1.Add("Connecting to chat server...");
 
-		//this.Connected = false;
 		peer.Connect("191.238.97.27:4530", "ChatServer");
-
-		//while (!this.connected)
-		//{
-		//	peer.Service();
-		//}
-
-		//var buffer = new StringBuilder();
-		//while (true)
-		//{
-		//	peer.Service();
-
-		//	// read input
-		//	if (Console.KeyAvailable)
-		//	{
-		//		ConsoleKeyInfo key = Console.ReadKey();
-		//		if (key.Key != ConsoleKey.Enter)
-		//		{
-		//			// store input
-		//			buffer.Append(key.KeyChar);
-		//		}
-		//		else
-		//		{
-		//			// send to server
-		//			var parameters = new Dictionary<byte, object> { { 1, buffer.ToString() } };
-		//			peer.OpCustom(1, parameters, true);
-		//			buffer.Length = 0;
-		//		}
-		//	}
-		//}
 	}
 
 	public void PeerService ()
@@ -55,11 +25,11 @@ public class Chat : IPhotonPeerListener
 		peer.Service();
 	}
 
-	public void SendMessage ()
+	public void SendMessage (int tab)
 	{
-		var parameters = new Dictionary<byte, object> { { 1, string.Format("[{0}] {1}: {2}",
+		var parameters = new Dictionary<byte, object> { { 0, string.Format("[{0}] {1}: {2}",
 				DateTime.Now.ToString("HH:mm:ss"), MmoEngine.I.engine.Avatar.Text, ChatGUI.ChatInput) } };
-		peer.OpCustom(1, parameters, true);
+		peer.OpCustom((byte)tab, parameters, true);
 		ChatGUI.ChatInput = string.Empty;
 	}
 
@@ -71,7 +41,7 @@ public class Chat : IPhotonPeerListener
 
 	public void DebugReturn (DebugLevel level, string message)
 	{
-		ChatGUI.Messages.Add(level + ": " + message);
+		ChatGUI.MessagesTab1.Add(level + ": " + message);
 	}
 
 	public void OnEvent (EventData eventData)
@@ -79,15 +49,20 @@ public class Chat : IPhotonPeerListener
 		switch (eventData.Code)
 		{
 			case 1: 
-				ChatGUI.Messages.Add(eventData.Parameters[1].ToString());
+				ChatGUI.MessagesTab1.Add(eventData.Parameters[0].ToString());
 				break;
 			case 2:
-				object[] prm = eventData.Parameters[2] as object[];
-				string id = prm[0] as string;
-				int damage = (int)prm[1];
-
-				MmoEngine.I.actors[id].HP -= damage;
+				ChatGUI.MessagesTab2.Add(eventData.Parameters[0].ToString());
 				break;
+			case 3:
+				ChatGUI.MessagesTab3.Add(eventData.Parameters[0].ToString());
+				break;
+				//object[] prm = eventData.Parameters[2] as object[];
+				//string id = prm[0] as string;
+				//int damage = (int)prm[1];
+
+				//MmoEngine.I.actors[id].HP -= damage;
+				//break;
 		}
 	}
 
@@ -104,7 +79,7 @@ public class Chat : IPhotonPeerListener
 		}
 		else
 		{
-			ChatGUI.Messages.Add("Status: " + statusCode);
+			ChatGUI.MessagesTab1.Add("Status: " + statusCode);
 		}
 	}
 }

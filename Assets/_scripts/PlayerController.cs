@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
 
 	private void Update () 
 	{
-		if (IsAvatar)
+		if (IsAvatar && GUIUtility.hotControl == 0)
 		{
 			if (Input.GetKeyUp(KeyCode.Alpha1)) ChatGUI.chat.Attack(GetComponent<Player>().ID, 1);
 
