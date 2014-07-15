@@ -37,31 +37,6 @@ public class Player : MonoBehaviour, IActor
         set
         {
             _hp = value;
-            if (engine != null) SetAvatarText();
-        }
-    }
-
-    private bool isDead = false;
-    private void SetAvatarText()
-    {
-        if (changeText)
-            return;
-
-        string text=this.engine.Avatar.Text;
-        int rCount=5;
-        if (HP < 10)
-            rCount = 4;
-
-        text = text.Remove(0,rCount);
-
-        if (HP > 0)
-            this.engine.Avatar.SetText(HP.ToString() + "HP " + text);
-        else
-        {
-            if (isDead)
-                text = text.Remove(0, 3);
-            this.engine.Avatar.SetText("[Dead] " + text);
-            isDead = true;
         }
     }
 
@@ -145,7 +120,7 @@ public class Player : MonoBehaviour, IActor
         this.nameText = (GUIText)GameObject.Find("PlayerNamePrefab").GetComponent("GUIText");
         this.viewText = (GUIText)GameObject.Find("ViewDistancePrefab").GetComponent("GUIText");
 
-		this.engine.Avatar.SetText(HP.ToString() + "HP " + this.engine.Avatar.Text);
+		this.engine.Avatar.SetText(this.engine.Avatar.Text);
     }
 
     /// <summary>
