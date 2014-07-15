@@ -31,6 +31,8 @@ public class Actor : MonoBehaviour, IActor
 	public string ID { get; set; }
 	public int HP { get; set; }
 
+    public int MaxHP { get; set; }
+
     /// <summary>
     /// The actor.
     /// </summary>
@@ -79,7 +81,9 @@ public class Actor : MonoBehaviour, IActor
         this.camHeight = camHeight;
 
 		this.ID = actor.Id;
-		this.HP = 10;
+
+        MaxHP = 25;
+        this.HP = MaxHP;
 
 		MmoEngine.I.actors.Add(ID, this);
 
@@ -207,5 +211,10 @@ public class Actor : MonoBehaviour, IActor
         }
 
         return false;
+    }
+
+    public void TakeDamage(int dmg, string text)
+    {
+        HP -= dmg;
     }
 }

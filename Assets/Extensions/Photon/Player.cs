@@ -25,6 +25,8 @@ public class Player : MonoBehaviour, IActor
     /// </summary>
     private bool changeText = false;
 
+    private UnitOperations UOP;
+
 	public string ID { get; set; }
 
 	private int _hp;
@@ -40,6 +42,8 @@ public class Player : MonoBehaviour, IActor
             if (engine != null) SetAvatarText();
         }
     }
+
+    public int MaxHP { get; set; }
 
     private bool isDead = false;
     private void SetAvatarText()
@@ -136,7 +140,12 @@ public class Player : MonoBehaviour, IActor
     public void Initialize(Game engine)
     {
 		this.ID = engine.Avatar.Id;
-		this.HP = 10;
+
+        MaxHP = 25;
+        this.HP = MaxHP;
+
+
+        UOP = new UnitOperations(ID);
 
 		MmoEngine.I.actors.Add(ID, this);
 		
@@ -197,6 +206,16 @@ public class Player : MonoBehaviour, IActor
         }
     }
 
+
+    private void MakeAttack(int dmg)
+    {
+        UOP.RequestAttack(ID, dmg);
+    }
+
+    public void TakeDamage(int dmg, string text)
+    {
+        HP -= dmg;
+    }
     /// <summary>
     /// The read keyboard input.
     /// </summary>
@@ -234,7 +253,17 @@ public class Player : MonoBehaviour, IActor
             return;
         }
 
-        // center
+        if(Input.GetKey(KeyCode.A))
+        {
+            MakeAttack(3);
+        }
+
+        if (Input.GetKey(KeyCode.S))
+        {
+            MakeAttack(5);
+        }
+
+       /* // center
         if (Input.GetKey(KeyCode.Keypad5) || Input.GetKey(KeyCode.C))
         {
             if (this.lastKeyPress + 0.1f < Time.time)
@@ -303,5 +332,6 @@ public class Player : MonoBehaviour, IActor
                 this.lastKeyPress = Time.time;
             }
         }
+        */
     }
 }
