@@ -18,7 +18,7 @@ class UnitOperations : IPhotonPeerListener
 
         ActorID = id;
 
-        peer.Connect("191.238.97.27:5055", "UnitOperations");
+        peer.Connect("191.238.97.27:5055", "Lite");
     }
 
     public void PeerService()
@@ -33,8 +33,11 @@ class UnitOperations : IPhotonPeerListener
 
     public void RequestAttack(string actorID, int damage)
     {
-        var parameters = new Dictionary<byte, object> { { 4, 3 }, { 3, "I kicked myself" }, { 1, ActorID } };
+        var parameters = new Dictionary<byte, object> { { (byte)4, damage }, { (byte)3, "I kicked myself" }, { (byte) 1, ActorID } };
         peer.OpCustom(12, parameters,true);
+
+        foreach (object obj in parameters)
+            Debug.Log(obj);
     }
 
     public void RequestMessage()
@@ -46,22 +49,51 @@ class UnitOperations : IPhotonPeerListener
         switch (eventData.Code)
         {
             case 12:
-                ResponseAttack(eventData.Parameters);
+                //ResponseAttack(eventData.Parameters);
                 break;
         }
     }
 
-    private void ResponseAttack(Dictionary<byte,object> parametrs)
+    private void ResponseAttack(Dictionary<byte,object> parameters)
     {
-        string id = parametrs[1].ToString();
-        string msg = parametrs[3].ToString();
-        int dmg = (int)parametrs[4];
-        MmoEngine.I.actors[id].TakeDamage(dmg, msg);
+        foreach (object obj in parameters)
+            Debug.Log(obj);
 
+        Debug.Log(parameters.Count);
+
+        string id = parameters[1].ToString();
+        string msg = parameters[3].ToString();
+        int dmg = (int)parameters[4];
+        MmoEngine.I.actors[id].TakeDamage(dmg, msg);
     }
 
     public void OnOperationResponse(OperationResponse operationResponse)
     {
+        switch (operationResponse.OperationCode)
+        {
+            case 12:
+                ResponseAttack(operationResponse.Parameters);
+                break;
+            case 11:
+                ResponseMsg(operationResponse);
+                break;
+        }
+    }
+
+    private void ResponseMsg(OperationResponse operationResponse)
+    {
+        // OK
+        Debug.Log(operationResponse.Parameters[3]);
+        if (operationResponse.ReturnCode == 0)
+        {
+            // show the complete content of the response
+            Debug.Log(operationResponse.ToStringFull());
+        }
+        else
+        {
+            // show the error message
+            Debug.Log(operationResponse.DebugMessage);
+        }
     }
 
     public void OnStatusChanged(StatusCode statusCode)
@@ -70,6 +102,10 @@ class UnitOperations : IPhotonPeerListener
         {
             this.Connected = true;
             Debug.Log("On Connect To UnitOperations");
+            var parameter = new Dictionary<byte, object>();
+            parameter.Add((byte)3, "Hello World");
+
+            peer.OpCustom(11, parameter, true);
         }
         else
         {

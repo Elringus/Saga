@@ -140,6 +140,7 @@ public class Player : MonoBehaviour, IActor
         {
             if (this.engine != null)
             {
+                UOP.PeerService();
                 this.nameText.text = this.engine.Avatar.Text;
                 this.viewText.text = string.Format("{0:0} x {1:0}", this.engine.Avatar.ViewDistanceEnter[0], this.engine.Avatar.ViewDistanceEnter[1]);
                 this.Move();
@@ -218,12 +219,12 @@ public class Player : MonoBehaviour, IActor
             return;
         }
 
-        if(Input.GetKey(KeyCode.A))
+        if(Input.GetKeyDown(KeyCode.A))
         {
             MakeAttack(3);
         }
 
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             MakeAttack(5);
         }
