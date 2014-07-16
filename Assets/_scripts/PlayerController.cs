@@ -58,11 +58,26 @@ public class PlayerController : MonoBehaviour
 
 		Animate();
 	}
-
 	private void Animate ()
 	{
 		animator.SetFloat("Forward", currentMoveSpeed * MoveSpeed * 50, .1f, Time.deltaTime);
 		animator.SetBool("InAir", !controller.isGrounded);
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            
+            animator.SetBool("Fighting", true);
+            if (Random.Range(0, 2) == 0)
+            {
+                animator.SetBool("Attack1", true);
+                Debug.Log("Attack1");
+            }
+            else
+            {
+                animator.SetBool("Attack2", true);
+                Debug.Log("Attack2");
+            }
+        }
 		//Animator.SetBool("Climbing", IsClimbing);
 		//Animator.SetBool("Fighting", InBattle);
 	}
