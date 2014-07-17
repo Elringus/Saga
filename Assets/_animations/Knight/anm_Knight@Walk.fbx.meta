@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: 1e583a603adbe0a42b70b181ccae9c50
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: Cuirass
+    100006: glaza003
+    100008: Head
+    100010: Helmet
+    100012: Hip
+    100014: Hip_armor
+    100016: Left_Ankle_Joint_01
+    100018: Left_Ankle_Joint_02
+    100020: Left_Forearm_Joint_01
+    100022: Left_Forearm_Joint_02
+    100024: Left_Forearm_Joint_03
+    100026: Left_Index_Finger_Joint_01a
+    100028: Left_Index_Finger_Joint_01b
+    100030: Left_Index_Finger_Joint_01c
+    100032: left_kirk
+    100034: Left_Knee_Joint_01
+    100036: Left_Middle_Finger_Joint_01a
+    100038: Left_Middle_Finger_Joint_01b
+    100040: Left_Middle_Finger_Joint_01c
+    100042: Left_Pinky_Finger_Joint_01a
+    100044: Left_Pinky_Finger_Joint_01b
+    100046: Left_Pinky_Finger_Joint_01c
+    100048: Left_Ring_Finger_Joint_01a
+    100050: Left_Ring_Finger_Joint_01b
+    100052: Left_Ring_Finger_Joint_01c
+    100054: Left_Shoulder_Joint_01
+    100056: Left_Thigh_Joint_01
+    100058: Left_Thumb_Joint_01a
+    100060: Left_Thumb_Joint_01b
+    100062: Left_Thumb_Joint_01c
+    100064: Left_Toe_Joint_01
+    100066: Left_Upper_Arm_Joint_01
+    100068: Left_weapon
+    100070: Left_Wrist_Joint_01
+    100072: LShoulder
+    100074: LThigh_armor
+    100076: Neck
+    100078: Ribs_Joint_01
+    100080: Ribs_Joint_02
+    100082: Ribs_Joint_03
+    100084: Ribs_Joint_04
+    100086: Right_Ankle_Joint_01
+    100088: Right_Ankle_Joint_02
+    100090: Right_Forearm_Joint_01
+    100092: Right_Forearm_Joint_02
+    100094: Right_Forearm_Joint_03
+    100096: Right_Index_Finger_Joint_01a
+    100098: Right_Index_Finger_Joint_01b
+    100100: Right_Index_Finger_Joint_01c
+    100102: right_kirk
+    100104: Right_Knee_Joint_01
+    100106: Right_Middle_Finger_Joint_01a
+    100108: Right_Middle_Finger_Joint_01b
+    100110: Right_Middle_Finger_Joint_01c
+    100112: Right_Pinky_Finger_Joint_01a
+    100114: Right_Pinky_Finger_Joint_01b
+    100116: Right_Pinky_Finger_Joint_01c
+    100118: Right_Ring_Finger_Joint_01a
+    100120: Right_Ring_Finger_Joint_01b
+    100122: Right_Ring_Finger_Joint_01c
+    100124: Right_Shoulder_Joint_01
+    100126: Right_Thigh_Joint_01
+    100128: Right_Thumb_Joint_01a
+    100130: Right_Thumb_Joint_01b
+    100132: Right_Thumb_Joint_01c
+    100134: Right_Toe_Joint_01
+    100136: Right_Upper_Arm_Joint_01
+    100138: Right_weapon
+    100140: Right_Wrist_Joint_01
+    100142: Rshoulder
+    100144: RThigh_armor
+    100146: sword
+    100148: telo003
+    100150: telo004
+    400000: //RootNode
+    400002: body
+    400004: Cuirass
+    400006: glaza003
+    400008: Head
+    400010: Helmet
+    400012: Hip
+    400014: Hip_armor
+    400016: Left_Ankle_Joint_01
+    400018: Left_Ankle_Joint_02
+    400020: Left_Forearm_Joint_01
+    400022: Left_Forearm_Joint_02
+    400024: Left_Forearm_Joint_03
+    400026: Left_Index_Finger_Joint_01a
+    400028: Left_Index_Finger_Joint_01b
+    400030: Left_Index_Finger_Joint_01c
+    400032: left_kirk
+    400034: Left_Knee_Joint_01
+    400036: Left_Middle_Finger_Joint_01a
+    400038: Left_Middle_Finger_Joint_01b
+    400040: Left_Middle_Finger_Joint_01c
+    400042: Left_Pinky_Finger_Joint_01a
+    400044: Left_Pinky_Finger_Joint_01b
+    400046: Left_Pinky_Finger_Joint_01c
+    400048: Left_Ring_Finger_Joint_01a
+    400050: Left_Ring_Finger_Joint_01b
+    400052: Left_Ring_Finger_Joint_01c
+    400054: Left_Shoulder_Joint_01
+    400056: Left_Thigh_Joint_01
+    400058: Left_Thumb_Joint_01a
+    400060: Left_Thumb_Joint_01b
+    400062: Left_Thumb_Joint_01c
+    400064: Left_Toe_Joint_01
+    400066: Left_Upper_Arm_Joint_01
+    400068: Left_weapon
+    400070: Left_Wrist_Joint_01
+    400072: LShoulder
+    400074: LThigh_armor
+    400076: Neck
+    400078: Ribs_Joint_01
+    400080: Ribs_Joint_02
+    400082: Ribs_Joint_03
+    400084: Ribs_Joint_04
+    400086: Right_Ankle_Joint_01
+    400088: Right_Ankle_Joint_02
+    400090: Right_Forearm_Joint_01
+    400092: Right_Forearm_Joint_02
+    400094: Right_Forearm_Joint_03
+    400096: Right_Index_Finger_Joint_01a
+    400098: Right_Index_Finger_Joint_01b
+    400100: Right_Index_Finger_Joint_01c
+    400102: right_kirk
+    400104: Right_Knee_Joint_01
+    400106: Right_Middle_Finger_Joint_01a
+    400108: Right_Middle_Finger_Joint_01b
+    400110: Right_Middle_Finger_Joint_01c
+    400112: Right_Pinky_Finger_Joint_01a
+    400114: Right_Pinky_Finger_Joint_01b
+    400116: Right_Pinky_Finger_Joint_01c
+    400118: Right_Ring_Finger_Joint_01a
+    400120: Right_Ring_Finger_Joint_01b
+    400122: Right_Ring_Finger_Joint_01c
+    400124: Right_Shoulder_Joint_01
+    400126: Right_Thigh_Joint_01
+    400128: Right_Thumb_Joint_01a
+    400130: Right_Thumb_Joint_01b
+    400132: Right_Thumb_Joint_01c
+    400134: Right_Toe_Joint_01
+    400136: Right_Upper_Arm_Joint_01
+    400138: Right_weapon
+    400140: Right_Wrist_Joint_01
+    400142: Rshoulder
+    400144: RThigh_armor
+    400146: sword
+    400148: telo003
+    400150: telo004
+    2300000: Cuirass
+    2300002: glaza003
+    2300004: Helmet
+    2300006: Hip_armor
+    2300008: left_kirk
+    2300010: LShoulder
+    2300012: LThigh_armor
+    2300014: right_kirk
+    2300016: Rshoulder
+    2300018: RThigh_armor
+    2300020: sword
+    2300022: telo003
+    2300024: telo004
+    3300000: Cuirass
+    3300002: glaza003
+    3300004: Helmet
+    3300006: Hip_armor
+    3300008: left_kirk
+    3300010: LShoulder
+    3300012: LThigh_armor
+    3300014: right_kirk
+    3300016: Rshoulder
+    3300018: RThigh_armor
+    3300020: sword
+    3300022: telo003
+    3300024: telo004
+    4300000: body
+    4300002: LThigh_armor
+    4300004: RThigh_armor
+    4300006: telo004
+    4300008: Rshoulder
+    4300010: telo003
+    4300012: LShoulder
+    4300014: Helmet
+    4300016: glaza003
+    4300018: Cuirass
+    4300020: Hip_armor
+    4300022: left_kirk
+    4300024: sword
+    4300026: right_kirk
+    7400000: anc_KnightWalk
+    9500000: //RootNode
+    13700000: body
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 0
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: anc_KnightWalk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: body
+        weight: 1
+      - path: Hip
+        weight: 1
+      - path: Hip/Hip_armor
+        weight: 1
+      - path: Hip/Left_Thigh_Joint_01
+        weight: 1
+      - path: Hip/Left_Thigh_Joint_01/Left_Knee_Joint_01
+        weight: 1
+      - path: Hip/Left_Thigh_Joint_01/Left_Knee_Joint_01/Left_Ankle_Joint_01
+        weight: 1
+      - path: Hip/Left_Thigh_Joint_01/Left_Knee_Joint_01/Left_Ankle_Joint_01/Left_Ankle_Joint_02
+        weight: 1
+      - path: Hip/Left_Thigh_Joint_01/Left_Knee_Joint_01/Left_Ankle_Joint_01/Left_Ankle_Joint_02/Left_Toe_Joint_01
+        weight: 1
+      - path: Hip/Left_Thigh_Joint_01/LThigh_armor
+        weight: 1
+      - path: Hip/Ribs_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Cuirass
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Forearm_Joint_02
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Forearm_Joint_02/Left_Forearm_Joint_03
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Index_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Index_Finger_Joint_01a/Left_Index_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Index_Finger_Joint_01a/Left_Index_Finger_Joint_01b/Left_Index_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Middle_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Middle_Finger_Joint_01a/Left_Middle_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Middle_Finger_Joint_01a/Left_Middle_Finger_Joint_01b/Left_Middle_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Pinky_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Pinky_Finger_Joint_01a/Left_Pinky_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Pinky_Finger_Joint_01a/Left_Pinky_Finger_Joint_01b/Left_Pinky_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Ring_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Ring_Finger_Joint_01a/Left_Ring_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Ring_Finger_Joint_01a/Left_Ring_Finger_Joint_01b/Left_Ring_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Thumb_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Thumb_Joint_01a/Left_Thumb_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/Left_Thumb_Joint_01a/Left_Thumb_Joint_01b/Left_Thumb_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/Left_Forearm_Joint_01/Left_Wrist_Joint_01/telo003
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Left_Shoulder_Joint_01/Left_Upper_Arm_Joint_01/LShoulder
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Neck
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Neck/Head
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Neck/Head/glaza003
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Neck/Head/Helmet
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Forearm_Joint_02
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Forearm_Joint_02/Right_Forearm_Joint_03
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Index_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Index_Finger_Joint_01a/Right_Index_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Index_Finger_Joint_01a/Right_Index_Finger_Joint_01b/Right_Index_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Middle_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Middle_Finger_Joint_01a/Right_Middle_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Middle_Finger_Joint_01a/Right_Middle_Finger_Joint_01b/Right_Middle_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Pinky_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Pinky_Finger_Joint_01a/Right_Pinky_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Pinky_Finger_Joint_01a/Right_Pinky_Finger_Joint_01b/Right_Pinky_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Ring_Finger_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Ring_Finger_Joint_01a/Right_Ring_Finger_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Ring_Finger_Joint_01a/Right_Ring_Finger_Joint_01b/Right_Ring_Finger_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Thumb_Joint_01a
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Thumb_Joint_01a/Right_Thumb_Joint_01b
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/Right_Thumb_Joint_01a/Right_Thumb_Joint_01b/Right_Thumb_Joint_01c
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Right_Forearm_Joint_01/Right_Wrist_Joint_01/telo004
+        weight: 1
+      - path: Hip/Ribs_Joint_01/Ribs_Joint_02/Ribs_Joint_03/Ribs_Joint_04/Right_Shoulder_Joint_01/Right_Upper_Arm_Joint_01/Rshoulder
+        weight: 1
+      - path: Hip/Right_Thigh_Joint_01
+        weight: 1
+      - path: Hip/Right_Thigh_Joint_01/Right_Knee_Joint_01
+        weight: 1
+      - path: Hip/Right_Thigh_Joint_01/Right_Knee_Joint_01/Right_Ankle_Joint_01
+        weight: 1
+      - path: Hip/Right_Thigh_Joint_01/Right_Knee_Joint_01/Right_Ankle_Joint_01/Right_Ankle_Joint_02
+        weight: 1
+      - path: Hip/Right_Thigh_Joint_01/Right_Knee_Joint_01/Right_Ankle_Joint_01/Right_Ankle_Joint_02/Right_Toe_Joint_01
+        weight: 1
+      - path: Hip/Right_Thigh_Joint_01/RThigh_armor
+        weight: 1
+      - path: Left_weapon
+        weight: 1
+      - path: Left_weapon/left_kirk
+        weight: 1
+      - path: Right_weapon
+        weight: 1
+      - path: Right_weapon/right_kirk
+        weight: 1
+      - path: Right_weapon/sword
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

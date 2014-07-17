@@ -5,9 +5,11 @@ public class PlayerController : MonoBehaviour
 {
 	public Transform Transform;
 	public float MoveSpeed;
+	public float ClimbSpeed;
 	public float PointMoveLimit;
 	public bool IsAvatar = true;
 
+	private bool isClimbing;
 	private float currentMoveSpeed;
 	private Vector3 prevPosition;
 	private Vector3 currentMovePoint;
@@ -43,21 +45,70 @@ public class PlayerController : MonoBehaviour
 				}
 			}
 
-			if (Vector3.Distance(Transform.position, currentMovePoint) > PointMoveLimit)
+			if (isClimbing)
 			{
-				Transform.LookAt(currentMovePoint);
-				Transform.eulerAngles = new Vector3(0, Transform.eulerAngles.y, 0);
-				controller.Move(Transform.TransformDirection(Vector3.forward) * Time.deltaTime * MoveSpeed);
+				if (Vector3.Distance(Transform.position, currentMovePoint) > PointMoveLimit)
+				{
+					controller.Move((currentMovePoint - Transform.position).normalized * Time.deltaTime * ClimbSpeed);
+				}
+
+				RaycastHit? vertHit = CanClimb();
+				if (!vertHit.HasValue)
+				{
+					isClimbing = false;
+				}
+				else
+				{
+					Transform.LookAt(vertHit.Value.point, vertHit.Value.normal);
+					Transform.eulerAngles = new Vector3(0, Transform.eulerAngles.y, 0);
+
+					if (Vector3.Distance(Transform.position, vertHit.Value.point) > .5f) 
+						controller.Move(Transform.TransformDirection(Vector3.forward) * Time.deltaTime * 5f);
+				}
+			}
+			else
+			{
+				if (Vector3.Distance(Transform.position, currentMovePoint) > PointMoveLimit)
+				{
+					Transform.LookAt(currentMovePoint);
+					Transform.eulerAngles = new Vector3(0, Transform.eulerAngles.y, 0);
+					controller.Move(Transform.TransformDirection(Vector3.forward) * Time.deltaTime * MoveSpeed);
+				}
+				if (!controller.isGrounded) controller.Move(Vector3.down * Time.deltaTime * 9f);
+			}
+
+			if (Input.GetKeyDown(KeyCode.LeftShift))
+			{
+				if (isClimbing)
+				{
+					isClimbing = false;
+					return;
+				}
+
+				RaycastHit? vertHit = CanClimb();
+				if (vertHit.HasValue)
+				{
+					isClimbing = true;
+					Transform.position = vertHit.Value.point + (Transform.position - vertHit.Value.point).normalized;
+					Transform.LookAt(vertHit.Value.point, vertHit.Value.normal);
+					Transform.eulerAngles = new Vector3(0, Transform.eulerAngles.y, 0);
+				}
 			}
 		}
-
-		if (!controller.isGrounded) controller.Move(Vector3.down * Time.deltaTime * 9f);
 
 		currentMoveSpeed = (Transform.position - prevPosition).sqrMagnitude;
 		prevPosition = Transform.position;
 
 		Animate();
 	}
+
+	private RaycastHit? CanClimb ()
+	{
+		RaycastHit hit;
+		if (Physics.Raycast(Transform.position, Transform.TransformDirection(Vector3.forward), out hit, 1.5f, 1 << 8)) return hit;
+		else return null;
+	}
+
 	private void Animate ()
 	{
 		animator.SetFloat("Forward", currentMoveSpeed * MoveSpeed * 50, .1f, Time.deltaTime);
@@ -78,7 +129,7 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("Attack2");
             }
         }
-		//Animator.SetBool("Climbing", IsClimbing);
-		//Animator.SetBool("Fighting", InBattle);
+		animator.SetBool("Climbing", isClimbing);
+		//animator.SetBool("Fighting", InBattle);
 	}
 }
