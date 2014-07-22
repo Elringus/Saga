@@ -6,7 +6,7 @@ SubstanceImporter:
   - serializedVersion: 12
     name: sd_PoO_RockWall
     prototypeName: sd_PoO_RockWall
-    shader: {fileID: 9, guid: 0000000000000000f000000000000000, type: 0}
+    shader: {fileID: 33, guid: 0000000000000000f000000000000000, type: 0}
     inputs:
     - name: $outputsize
       value:
@@ -24,7 +24,7 @@ SubstanceImporter:
         texture: {instanceID: 0}
     - name: $randomseed
       value:
-        scalar[0]: 7733
+        scalar[0]: 3387
         scalar[1]: 0
         scalar[2]: 0
         scalar[3]: 0
@@ -49,13 +49,6 @@ SubstanceImporter:
         data:
           first:
             name: _BumpMap
-          second:
-            texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
-            offset: {x: 0, y: 0}
-        data:
-          first:
-            name: _ParallaxMap
           second:
             texture: {instanceID: 0}
             scale: {x: 1, y: 1}
@@ -108,10 +101,6 @@ SubstanceImporter:
         name: _BumpMap
       material: {instanceID: 0}
       baseUID: 141985970
-    - shaderProp:
-        name: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 141985967
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 

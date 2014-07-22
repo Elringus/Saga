@@ -15,6 +15,18 @@ public class PlayerController : MonoBehaviour
 	private Vector3 currentMovePoint;
 	private CharacterController controller;
 	private Animator animator;
+	private WhippingBoy whippingBoy;
+
+	private bool _isWalking;
+	public bool IsWalking
+	{
+		get { return _isWalking; }
+		set
+		{
+			if (value != _isWalking) MoveSpeed *= value ? .5f : 2;
+			_isWalking = value;
+		}
+	}
 
 	private void Awake () 
 	{
@@ -22,14 +34,13 @@ public class PlayerController : MonoBehaviour
 		controller = GetComponent<CharacterController>();
 		animator = GetComponentInChildren<Animator>();
 		currentMovePoint = Transform.position;
+		whippingBoy = GameObject.FindObjectOfType<WhippingBoy>();
 	}
 
 	private void Update () 
 	{
 		if (IsAvatar && GUIUtility.hotControl == 0)
 		{
-			if (Input.GetKeyUp(KeyCode.Alpha1)) ChatGUI.chat.Attack(GetComponent<Player>().ID, 1);
-
 			RaycastHit hit;
 			if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, (1 << 8) | (1 << 9)))
 			{
@@ -75,6 +86,19 @@ public class PlayerController : MonoBehaviour
 					controller.Move(Transform.TransformDirection(Vector3.forward) * Time.deltaTime * MoveSpeed);
 				}
 				if (!controller.isGrounded) controller.Move(Vector3.down * Time.deltaTime * 9f);
+
+				if (Input.GetKeyDown(KeyCode.A)) IsWalking = !IsWalking;
+				if (Input.GetKeyDown(KeyCode.Q))
+				{
+					animator.SetBool("Fighting", !animator.GetBool("Fighting"));
+					if (WhipBoyInRange()) whippingBoy.Animator.SetBool("Fighting", animator.GetBool("Fighting"));
+				}
+				if (Input.GetKeyDown(KeyCode.W))
+				{
+					animator.SetTrigger("Attack1");
+					Invoke("HitWhipBoy", .23f);
+				}
+				if (Input.GetKeyDown(KeyCode.E)) animator.SetTrigger("Damage");
 			}
 
 			if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -114,22 +138,20 @@ public class PlayerController : MonoBehaviour
 		animator.SetFloat("Forward", currentMoveSpeed * MoveSpeed * 50, .1f, Time.deltaTime);
 		animator.SetBool("InAir", !controller.isGrounded);
 
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            
-            animator.SetBool("Fighting", true);
-            if (Random.Range(0, 2) == 0)
-            {
-                animator.SetBool("Attack1", true);
-                Debug.Log("Attack1");
-            }
-            else
-            {
-                animator.SetBool("Attack2", true);
-                Debug.Log("Attack2");
-            }
-        }
 		animator.SetBool("Climbing", isClimbing);
 		//animator.SetBool("Fighting", InBattle);
+	}
+
+	private bool WhipBoyInRange ()
+	{
+		if (Vector3.Distance(Transform.position, whippingBoy.transform.position) < 2 &&
+			Vector3.Dot(Transform.TransformDirection(Vector3.forward), (whippingBoy.transform.position - Transform.position).normalized) > .5f)
+			return true;
+		else return false;
+	}
+
+	private void HitWhipBoy ()
+	{
+		if (WhipBoyInRange()) whippingBoy.Animator.SetTrigger("Damage");
 	}
 }

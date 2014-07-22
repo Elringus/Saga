@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: 9f462196e856e2b43b684f499575e792
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bag_Bone
+    100004: Bip001 Footsteps
+    100006: Character_Controller
+    100008: Finger_Left_Bone
+    100010: Finger_Right_Bone
+    100012: Foot_Left_Bone
+    100014: Foot_Right_Bone
+    100016: Hand_Left_Bone
+    100018: Hand_Right_Bone
+    100020: Hat_Bone
+    100022: Head_Bone
+    100024: Hip_Bone
+    100026: Lower_Arm_Left_Bone
+    100028: Lower_Arm_Right_Bone
+    100030: Lower_Leg_Left_Bone
+    100032: Lower_Leg_Right_Bone
+    100034: Neck_Bone
+    100036: Pipe_Bone
+    100038: Root_Bone
+    100040: Sailor_Mesh_Merge
+    100042: Shoulder_Left_Bone
+    100044: Shoulder_Right_Bone
+    100046: Spine_01_Bone
+    100048: Spine_02_Bone
+    100050: Spine_03_Bone
+    100052: Toe_Left_Bone
+    100054: Toe_Right_Bone
+    100056: Upper_Arm_Left_Bone
+    100058: Upper_Arm_Right_Bone
+    100060: Upper_Leg_Left_Bone
+    100062: Upper_Leg_Right_Bone
+    400000: //RootNode
+    400002: Bag_Bone
+    400004: Bip001 Footsteps
+    400006: Character_Controller
+    400008: Finger_Left_Bone
+    400010: Finger_Right_Bone
+    400012: Foot_Left_Bone
+    400014: Foot_Right_Bone
+    400016: Hand_Left_Bone
+    400018: Hand_Right_Bone
+    400020: Hat_Bone
+    400022: Head_Bone
+    400024: Hip_Bone
+    400026: Lower_Arm_Left_Bone
+    400028: Lower_Arm_Right_Bone
+    400030: Lower_Leg_Left_Bone
+    400032: Lower_Leg_Right_Bone
+    400034: Neck_Bone
+    400036: Pipe_Bone
+    400038: Root_Bone
+    400040: Sailor_Mesh_Merge
+    400042: Shoulder_Left_Bone
+    400044: Shoulder_Right_Bone
+    400046: Spine_01_Bone
+    400048: Spine_02_Bone
+    400050: Spine_03_Bone
+    400052: Toe_Left_Bone
+    400054: Toe_Right_Bone
+    400056: Upper_Arm_Left_Bone
+    400058: Upper_Arm_Right_Bone
+    400060: Upper_Leg_Left_Bone
+    400062: Upper_Leg_Right_Bone
+    4300000: Sailor_Mesh_Merge
+    7400000: ani_CharacterClimbingLoop
+    9500000: //RootNode
+    13700000: Sailor_Mesh_Merge
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ani_CharacterClimbingLoop
+      takeName: Take 001
+      firstFrame: 19
+      lastFrame: 33
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Character_Controller
+        weight: 1
+      - path: Character_Controller/Root_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Bip001 Footsteps
+        weight: 0
+      - path: Character_Controller/Root_Bone/Hip_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Bag_Bone
+        weight: 0
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Head_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Head_Bone/Hat_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Head_Bone/Pipe_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Left_Bone/Upper_Arm_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Left_Bone/Upper_Arm_Left_Bone/Lower_Arm_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Left_Bone/Upper_Arm_Left_Bone/Lower_Arm_Left_Bone/Hand_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Left_Bone/Upper_Arm_Left_Bone/Lower_Arm_Left_Bone/Hand_Left_Bone/Finger_Left_Bone
+        weight: 0
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Right_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Right_Bone/Upper_Arm_Right_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Right_Bone/Upper_Arm_Right_Bone/Lower_Arm_Right_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Right_Bone/Upper_Arm_Right_Bone/Lower_Arm_Right_Bone/Hand_Right_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Spine_02_Bone/Spine_03_Bone/Neck_Bone/Shoulder_Right_Bone/Upper_Arm_Right_Bone/Lower_Arm_Right_Bone/Hand_Right_Bone/Finger_Right_Bone
+        weight: 0
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Left_Bone/Lower_Leg_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Left_Bone/Lower_Leg_Left_Bone/Foot_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Left_Bone/Lower_Leg_Left_Bone/Foot_Left_Bone/Toe_Left_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Right_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Right_Bone/Lower_Leg_Right_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Right_Bone/Lower_Leg_Right_Bone/Foot_Right_Bone
+        weight: 1
+      - path: Character_Controller/Root_Bone/Hip_Bone/Spine_01_Bone/Upper_Leg_Right_Bone/Lower_Leg_Right_Bone/Foot_Right_Bone/Toe_Right_Bone
+        weight: 1
+      - path: Sailor_Mesh_Merge
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: Root_Bone
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Upper_Leg_Left_Bone
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Upper_Leg_Right_Bone
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lower_Leg_Left_Bone
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lower_Leg_Right_Bone
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Left_Bone
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Foot_Right_Bone
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_02_Bone
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Spine_03_Bone
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head_Bone
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Left_Bone
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Shoulder_Right_Bone
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Upper_Arm_Left_Bone
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Upper_Arm_Right_Bone
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lower_Arm_Left_Bone
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Lower_Arm_Right_Bone
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Left_Bone
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hand_Right_Bone
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Left_Bone
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Toe_Right_Bone
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pipe_Bone
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Hat_Bone
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: anm_Character@ClimbingLoop(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Character_Controller
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Root_Bone
+      position: {x: 0, y: .00730868895, z: .227107093}
+      rotation: {x: 0, y: -4.21468478e-08, z: -.707106829, w: -.707106769}
+      scale: {x: .999999881, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Bip001 Footsteps
+      position: {x: -.000973349204, y: -3.39337518e-08, z: .278910905}
+      rotation: {x: .00123387482, y: -.00123379065, z: -.707105219, w: .707106173}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hip_Bone
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: .499999315, y: -.500000715, z: -.499999315, w: -.500000715}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Spine_01_Bone
+      position: {x: -.0395673178, y: -6.98047879e-05, z: 5.49629817e-08}
+      rotation: {x: 2.05636002e-06, y: -2.98024219e-08, z: -2.98023437e-08, w: -1}
+      scale: {x: 1.00000012, y: 1, z: .999999881}
+      transformModified: 1
+    - name: Upper_Leg_Right_Bone
+      position: {x: .0394078828, y: .00354957092, z: -.0446602777}
+      rotation: {x: -.00218613446, y: .999997675, z: 1.32620187e-06, w: -1.34677407e-08}
+      scale: {x: .999999881, y: 1.00000024, z: .999999881}
+      transformModified: 1
+    - name: Lower_Leg_Right_Bone
+      position: {x: -.101962097, y: 0, z: 4.76837148e-09}
+      rotation: {x: -6.45646452e-08, y: -1.71637389e-08, z: .0732657537, w: .997312486}
+      scale: {x: .999999821, y: .999999821, z: 1.00000012}
+      transformModified: 1
+    - name: Foot_Right_Bone
+      position: {x: -.0994846448, y: 0, z: -4.76837148e-09}
+      rotation: {x: 3.14608322e-08, y: 1.68048544e-08, z: -.0710853264, w: .997470319}
+      scale: {x: 1.00000012, y: 1.00000012, z: .999999821}
+      transformModified: 1
+    - name: Toe_Right_Bone
+      position: {x: -.020206701, y: .0263861082, z: 0}
+      rotation: {x: 4.48160421e-07, y: 4.79069968e-07, z: -.707106829, w: .707106829}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Spine_02_Bone
+      position: {x: -.0880220979, y: -6.98161093e-05, z: -2.0791048e-10}
+      rotation: {x: 1.49011555e-07, y: -8.88178335e-15, z: 5.32907009e-15, w: 1}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Spine_03_Bone
+      position: {x: -.0880221948, y: -6.98232616e-05, z: -2.21007213e-10}
+      rotation: {x: 1.19209247e-07, y: -2.98023117e-08, z: -2.9802333e-08, w: 1}
+      scale: {x: .999999881, y: .999999881, z: .999999762}
+      transformModified: 1
+    - name: Neck_Bone
+      position: {x: -.0880160853, y: -2.05421438e-05, z: -5.70435053e-11}
+      rotation: {x: 2.84217094e-14, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Shoulder_Right_Bone
+      position: {x: -0, y: 2.06470486e-05, z: -.0339702442}
+      rotation: {x: -.611760557, y: 1.07593564e-06, z: -.791043043, w: 8.34773914e-07}
+      scale: {x: .999999881, y: 1, z: 1}
+      transformModified: 1
+    - name: Upper_Arm_Right_Bone
+      position: {x: -.0995904356, y: 9.53674295e-09, z: 0}
+      rotation: {x: -.0948167518, y: -.113108061, z: -.0122696683, w: .988972127}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000036}
+      transformModified: 1
+    - name: Lower_Arm_Right_Bone
+      position: {x: -.182033211, y: 4.76837148e-09, z: 0}
+      rotation: {x: .000950821093, y: -.00865349639, z: .0366851352, w: .999289036}
+      scale: {x: 1.00000012, y: .99999994, z: 1.00000036}
+      transformModified: 1
+    - name: Hand_Right_Bone
+      position: {x: -.103203088, y: -1.90734859e-08, z: 0}
+      rotation: {x: -.601868212, y: 3.0729403e-08, z: 7.19091542e-09, w: -.798595488}
+      scale: {x: 1.00000012, y: .999999642, z: .999999821}
+      transformModified: 1
+    - name: Finger_Right_Bone
+      position: {x: -.0339987949, y: .00523410784, z: .00025894164}
+      rotation: {x: -.0108097447, y: -.0274255667, z: -.340833038, w: .939661622}
+      scale: {x: 1.00000024, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Shoulder_Left_Bone
+      position: {x: -0, y: 2.0456313e-05, z: .0339702442}
+      rotation: {x: -.611760497, y: -1.09162579e-06, z: .791043043, w: 8.14868486e-07}
+      scale: {x: 1.00000048, y: 1.00000024, z: 1.00000012}
+      transformModified: 1
+    - name: Upper_Arm_Left_Bone
+      position: {x: -.0995904505, y: 0, z: 0}
+      rotation: {x: .0948169008, y: .113107838, z: -.0122693619, w: .988972187}
+      scale: {x: 1, y: 1, z: 1.00000012}
+      transformModified: 1
+    - name: Lower_Arm_Left_Bone
+      position: {x: -.182033196, y: 4.76837148e-09, z: 0}
+      rotation: {x: -.000950720743, y: .00865399651, z: .0366852991, w: .999288976}
+      scale: {x: .999999821, y: .999999821, z: .999999762}
+      transformModified: 1
+    - name: Hand_Left_Bone
+      position: {x: -.103203088, y: 3.81469718e-08, z: 0}
+      rotation: {x: .601868212, y: -1.55890181e-08, z: 4.56846294e-08, w: -.798595428}
+      scale: {x: 1.00000072, y: 1.00000036, z: 1.00000024}
+      transformModified: 1
+    - name: Finger_Left_Bone
+      position: {x: -.0339987986, y: .00523414603, z: -.00025894164}
+      rotation: {x: .0108097121, y: .0274255369, z: -.340833038, w: .939661622}
+      scale: {x: 1.00000012, y: .99999994, z: 1.0000006}
+      transformModified: 1
+    - name: Head_Bone
+      position: {x: -.0258007813, y: 0, z: -7.27595745e-14}
+      rotation: {x: -2.38418608e-07, y: 3.55271283e-15, z: 1.06581385e-14, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Hat_Bone
+      position: {x: -.109314077, y: .00230386737, z: 1.18613244e-07}
+      rotation: {x: -.701057494, y: -.092296645, z: .701057374, w: -.092295751}
+      scale: {x: .999999881, y: 1.00000036, z: 1.00000048}
+      transformModified: 1
+    - name: Pipe_Bone
+      position: {x: -.0213246532, y: .0516737923, z: .00325397495}
+      rotation: {x: -.642898023, y: -.116322279, z: .661534846, w: .368134558}
+      scale: {x: 1.00000024, y: 1.00000048, z: 1.00000036}
+      transformModified: 1
+    - name: Bag_Bone
+      position: {x: .0350398645, y: -.127436489, z: -1.90424387e-07}
+      rotation: {x: -.703000903, y: -.0760898888, z: .703001022, w: -.0760908127}
+      scale: {x: 1.00000024, y: .999999762, z: .999999583}
+      transformModified: 1
+    - name: Upper_Leg_Left_Bone
+      position: {x: .0394078232, y: .00354933017, z: .0446603335}
+      rotation: {x: -.00218613446, y: .999997675, z: 1.32620175e-06, w: -1.34677407e-08}
+      scale: {x: 1, y: 1.00000024, z: .999999821}
+      transformModified: 1
+    - name: Lower_Leg_Left_Bone
+      position: {x: -.101962104, y: 1.19209287e-09, z: -4.76837148e-09}
+      rotation: {x: -6.45646452e-08, y: -1.71637389e-08, z: .0732657537, w: .997312486}
+      scale: {x: .99999994, y: 1.00000012, z: 1.00000012}
+      transformModified: 1
+    - name: Foot_Left_Bone
+      position: {x: -.0994846225, y: -5.96046434e-10, z: 4.76837148e-09}
+      rotation: {x: 3.14608322e-08, y: 1.68048544e-08, z: -.0710853264, w: .997470319}
+      scale: {x: 1, y: .999999762, z: .999999762}
+      transformModified: 1
+    - name: Toe_Left_Bone
+      position: {x: -.0202067029, y: .0263861082, z: 0}
+      rotation: {x: 4.48161416e-07, y: 4.79068945e-07, z: -.707106829, w: .707106829}
+      scale: {x: 1.00000012, y: 1.00000012, z: 1}
+      transformModified: 1
+    - name: Sailor_Mesh_Merge
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: -.707106829, y: 0, z: -0, w: .707106829}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  additionalBone: 0
+  userData: 
